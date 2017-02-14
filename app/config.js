@@ -1,23 +1,26 @@
+import strings from './strings'
+const {amma, instashop, wedding, dignity}  = strings.heroImages
+
 const images = [
   {
     img: require(`../public/images/amma.jpg`),
-    title: 'Amma',
-    text: 'Case project for building an app for asthma tracking',
+    title: amma.title,
+    text: amma.text,
   },
   {
     img: require(`../public/images/instashop.jpg`),
-    title: 'Instashop',
-    text: 'Responsive online grocery store websites',
+    title: instashop.title,
+    text: instashop.text,
   },
   {
     img: require(`../public/images/wedding.jpg`),
-    title: 'Wedding website',
-    text: 'Responsive wedding website',
+    title: wedding.title,
+    text: wedding.text,
   },
   {
     img: require(`../public/images/dignity-meals.jpg`),
-    title: 'Dignity Meals',
-    text: 'Mobile app for connecting food donors with charities',
+    title: dignity.title,
+    text: dignity.text,
   },
 ]
 
