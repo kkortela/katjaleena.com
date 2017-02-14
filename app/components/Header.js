@@ -14,7 +14,6 @@ const Header = ({setPage}) => {
         <div className={styles.nav}>
           <ul>
             <li><div className={styles.btn} onClick={navigate.bind(null, 'work')}>My work</div></li>
-            <li><div className={styles.btn} onClick={navigate.bind(null, 'process')}>Design Process</div></li>
             <li><div className={styles.btn} onClick={navigate.bind(null, 'about')}>About me</div></li>
           </ul>
         </div>
