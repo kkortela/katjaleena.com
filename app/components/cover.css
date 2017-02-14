@@ -1,0 +1,31 @@
+.cover {
+  height: 500px;
+  background: url(../../public/images/cover.jpg) no-repeat center center;
+  background-size: cover;
+}
+
+.small {
+  display: none;
+}
+
+@media screen and (max-width: 1024px) {
+  .large {
+    display: none;
+  }
+  div.small {
+    display: block;
+    color: #0B3F3C;
+    float: none;
+    margin: 50px auto;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  div.small {
+    width: 287px;
+  }
+
+  div.small p {
+    font-size: 20px;
+  }
+}

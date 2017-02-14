@@ -1,0 +1,57 @@
+.cases {
+  margin: 60px auto;
+  max-width: 1280px;
+}
+
+.wrapper {
+  display: inline-block;
+  margin-bottom: 60px;
+}
+
+.wrapper img {
+  width: 250px;
+  vertical-align: top;
+}
+
+.wrapper a {
+  display: block;
+  width: 250px;
+  position: relative;
+  margin: 0 auto;
+  box-shadow: 0 3px 7px #666666;
+}
+
+.textContent {
+  color: white;
+  background: rgba(10,97,85,0.5);
+  cursor: pointer;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  opacity: 0;
+}
+
+.textContent h2 {
+  font-size: 38px;
+  line-height: 60px;
+  font-family: 'ShorelinesScript';
+  text-transform: uppercase;
+  margin: 40px 0 0 0;
+}
+
+.textContent p {
+  font-size: 20px;
+  font-weight: 500;
+  margin: 0 30px;
+}
+
+.textContent div {
+  text-align: center;
+  width: 100%;
+}
+
+div.wrapper:hover .textContent {
+  opacity: 1;
+}

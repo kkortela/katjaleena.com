@@ -1,0 +1,38 @@
+.logo {
+  float:left;
+  cursor: pointer;
+  height: 54px;
+}
+
+.header {
+  margin: 20px 10% 10px 10%;
+  height: 100%;
+  overflow:hidden;
+}
+
+.nav li, .nav ul, .nav{
+  list-style-type: none;
+  padding: 0;
+  display: inline;
+}
+
+.nav {
+  float: right;
+}
+
+.nav li {
+  padding: 0 10px 0 10px;
+  text-transform: uppercase;
+}
+
+.btn {
+  color: #0B3F3C;
+  font-size: 16px;
+  font-weight: 500;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.btn:hover {
+  color: #5CA59B;
+}

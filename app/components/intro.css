@@ -1,0 +1,19 @@
+.intro {
+  margin-top: 100px;
+  color: white;
+  text-align: center;
+  padding: 0 5%;
+  width: 387px;
+  float: right;
+}
+
+.intro h1 {
+  font-family: 'ShorelinesScript';
+  font-size: 42px;
+  margin: 0;
+}
+
+.intro p {
+  font-size: 30px;
+  margin: 0;
+}

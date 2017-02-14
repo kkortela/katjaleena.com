@@ -1,0 +1,29 @@
+@font-face {
+  font-family: 'BrandonGrotesque';
+  src: url('../public/fonts/Brandon_reg.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'BrandonGrotesque';
+  src: url('../public/fonts/Brandon_bld.otf') format('opentype');
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: 'BrandonGrotesque';
+  src: url('../public/fonts/Brandon_med.otf') format('opentype');
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'ShorelinesScript';
+  src: url('../public/fonts/shorelines-script-bold.otf') format('opentype');
+  }
+
+body, p {
+  font-family: "BrandonGrotesque";
+}
+
+body {
+  margin: 0;
+}
