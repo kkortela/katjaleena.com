@@ -16,6 +16,12 @@
 }
 
 @font-face {
+  font-family: 'BrandonGrotesque';
+  src: url('../public/fonts/Brandon_light.otf') format('opentype');
+  font-weight: 300;
+}
+
+@font-face {
   font-family: 'ShorelinesScript';
   src: url('../public/fonts/shorelines-script-bold.otf') format('opentype');
   }
