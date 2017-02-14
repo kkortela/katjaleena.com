@@ -3,6 +3,7 @@ import Header from './Header'
 import Cover from './Cover'
 import Cases from './Cases'
 import Footer from './Footer'
+import Work from './Work'
 
 export default class App extends React.Component {
   constructor(props) {
@@ -21,9 +22,11 @@ export default class App extends React.Component {
     console.log('showPage', page)
     switch (page) {
     case 'work':
-      return
-    case 'process':
-      return
+      return (
+        <div>
+          <Work/>
+        </div>
+      )
     case 'about':
       return
     default:
