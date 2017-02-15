@@ -32,7 +32,7 @@ module.exports = {
     loaders: [{
       test: /\.jsx?$/,
       exclude: /node_modules/,
-      loader: 'babel',
+      loader: 'babel-loader',
       query: {
         "presets": ["react", "es2015", "stage-0", "react-hmre"]
       }
@@ -41,10 +41,10 @@ module.exports = {
       loader: 'json'
     }, {
       test: /\.css$/,
-      loader: 'style!css?modules&localIdentName=[name]---[local]---[hash:base64:5]'
+      loader: 'style-loader!css-loader?modules&localIdentName=[name]---[local]---[hash:base64:5]'
     }, {
       test: /\.otf$/,
-      loader: 'url?limit=10240&mimetype=application/x-font-opentype'
+      loader: 'url-loader?limit=10240&mimetype=application/x-font-opentype'
     }, {
         test: /\.jpg$/,
         loader: "url-loader?limit=10000&mimetype=image/jpg"
