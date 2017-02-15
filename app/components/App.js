@@ -4,6 +4,8 @@ import Cover from './Cover'
 import Cases from './Cases'
 import Footer from './Footer'
 import Work from './Work'
+import About from './About'
+import strings from '../strings'
 
 export default class App extends React.Component {
   constructor(props) {
@@ -28,7 +30,11 @@ export default class App extends React.Component {
         </div>
       )
     case 'about':
-      return
+      return (
+        <div>
+          <About strings={strings.about}/>
+        </div>
+      )
     default:
       return (
           <div>

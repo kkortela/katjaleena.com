@@ -7,6 +7,31 @@ const strings = {
     title: 'My Work',
     text: 'Here’s some of my latest work'
   },
+  about: {
+    references: {
+      title: 'Things said about Katja',
+      ref1: {
+        text: 'She brings the creative side and the engineer’s logic to the table. Basically she is two people in one.',
+        referer: 'School colleague'
+      },
+      ref2: {
+        text: 'She is natural, and bubbly in client meetings. She is a people person and doesn’t have problem working in international environments.',
+        referer: 'Superior, Sellusta Finland Oy'
+      },
+      ref3: {
+        text: 'She is natural, and bubbly in client meetings. She is a people person and doesn’t have problem working in international environments.',
+        referer: 'Superior, Sellusta Finland Oy'
+      },
+      ref4: {
+        text: 'She is natural, and bubbly in client meetings. She is a people person and doesn’t have problem working in international environments.',
+        referer: 'Superior, Sellusta Finland Oy'
+      },
+      ref5: {
+        text: 'She is natural, and bubbly in client meetings. She is a people person and doesn’t have problem working in international environments.',
+        referer: 'Superior, Sellusta Finland Oy'
+      },
+    }
+  },
   heroImages: {
     amma: {
       title: 'Amma',
