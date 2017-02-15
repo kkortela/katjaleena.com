@@ -22,6 +22,19 @@
 }
 
 @font-face {
+  font-family: 'BrandonGrotesque';
+  src: url('../public/fonts/Brandon_reg_it.otf') format('opentype');
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'BrandonGrotesque';
+  src: url('../public/fonts/Brandon_light_it.otf') format('opentype');
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
   font-family: 'ShorelinesScript';
   src: url('../public/fonts/shorelines-script-bold.otf') format('opentype');
   }
