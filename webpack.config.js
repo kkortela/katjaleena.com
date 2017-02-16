@@ -1,8 +1,8 @@
 'use strict'
 
-var path = require('path')
-var webpack = require('webpack')
-var HtmlWebpackPlugin = require('html-webpack-plugin')
+const path = require('path')
+const webpack = require('webpack')
+const HtmlWebpackPlugin = require('html-webpack-plugin')
 
 module.exports = {
   devtool: 'eval-source-map',
@@ -46,14 +46,14 @@ module.exports = {
       test: /\.otf$/,
       loader: 'url-loader?limit=10240&mimetype=application/x-font-opentype'
     }, {
-        test: /\.jpg$/,
-        loader: "url-loader?limit=10000&mimetype=image/jpg"
+      test: /\.jpg$/,
+      loader: "url-loader?limit=10000&mimetype=image/jpg"
     }, {
-        test: /\.png$/,
-        loader: "url-loader?limit=10000&mimetype=image/png"
+      test: /\.png$/,
+      loader: "url-loader?limit=10000&mimetype=image/png"
     }, {
-        test: /\.svg$/,
-        loader: "svg-url-loader?limit=1024&mimetype=image/svg"
+      test: /\.svg$/,
+      loader: "svg-url-loader?limit=1024&mimetype=image/svg"
     }]
   }
 }
