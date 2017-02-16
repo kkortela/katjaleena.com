@@ -240,6 +240,7 @@ const strings = {
       text: 'My research showed that the people aren’t very fond of grocery shopping and they wish that there was an easier way for that. In this project the target users were busy professionals, who didn’t have time or motivation for shopping. This insight in mind, I streamlined a service that is effortless and intuitive to use and brings relief to people’s daily life.',
     },
     process: {
+      title: 'Process',
       research: {
         title: 'Research',
         text: 'For Instashop project I think it was vital to understand the current market for online grocery stores, who uses them, and what needs to be improved. I interviewed 9 people for the research. The answers were divided: some of them were positive towards online grocery stores, because they didn’t like grocery shopping, and were too busy to shop. Then again, some people liked the grocery shopping experience and thought that the haptic side of it is crucial. They want to feel and see the quality of the products they’re purchasing.',
