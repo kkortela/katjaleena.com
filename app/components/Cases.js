@@ -1,6 +1,7 @@
 import React from 'react'
 import styles from './cases.css'
 import images from '../config'
+import strings from '../strings'
 
 const Cases = () => {
   const Case = ({img, title, text}, i) => {
@@ -20,6 +21,7 @@ const Cases = () => {
   }
   return (
       <div className={styles.cases}>
+        <h1>{strings.work.title}</h1>
         <div className="pure-g">
           {images.map(Case)}
         </div>
