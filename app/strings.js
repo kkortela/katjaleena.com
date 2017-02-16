@@ -303,6 +303,10 @@ const strings = {
       }
     }
   about: {
+    title: 'I’m Katja,  glad to meet you!',
+    text1: 'I’m Katja, an UX designer with background in Bioproduct Engineering (I know, right!). I’m pursuing a career as a UX Designer with emphasis on UI design. I currently live in Helsinki, Finland, but my roots are in Northern Karelia.',
+    text2: 'My goal as a designer is make people’s lives easier. I really want design products for a cause and the needs of people, not tout something that only profits the business. I engage myself in user research, and keep the user close during the process to honestly create something meaningful. That being said, I enjoy most doing iterations of visual features and really testing my skills in creating dashing designs with purpose.',
+    text3: 'In my freetime I focus on evolving myself and my skills, test beta versions of new services, do yoga, dance, play kantele and make it count with my friends.',
     references: {
       title: 'Things said about Katja',
       ref1: {
