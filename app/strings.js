@@ -302,6 +302,7 @@ const strings = {
         text4: 'I was thrown to the deep end of the pool filled with ice-water and learned to swim. I learnt HTML/CSS and JavaScript on codeacademy.com and used my skills from there, and the help of my developer fiancé to create the website. I learnt to use Git and Heroku during this project.',
       },
     },
+  },
   about: {
     title: 'I’m Katja,  glad to meet you!',
     text1: 'I’m Katja, an UX designer with background in Bioproduct Engineering (I know, right!). I’m pursuing a career as a UX Designer with emphasis on UI design. I currently live in Helsinki, Finland, but my roots are in Northern Karelia.',
