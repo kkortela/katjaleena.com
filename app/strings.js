@@ -278,6 +278,30 @@ const strings = {
       }
     }
   }
+  wedding: {
+    title: 'Wedding Website',
+    link: 'www.mikatja.fi'
+    intro: {
+      intro1: {
+        subtitle: 'Project:',
+        text: 'Creating responsive website for our wedding',
+      }
+      intro3: {
+        subtitle: 'Goal:',
+        text: 'To give information about the wedding for the guests and also a place for registration',
+      }
+      intro4: {
+        subtitle: 'My role:',
+        text: 'Visual Design and Front-end development',
+      }
+      summary: {
+        title: 'Summary',
+        text1: 'This project begun at the end of my first graphic design course, where I learned the principles of web design. I wanted to create responsive website for our wedding and was also encouraged to develop them myself (with the help of my future husband).',
+        text2: 'The goal was to create beautiful, intuitive and responsive website that would be a delight to use. I browsed through different wedding websites and emulated the best features of the sites. I wanted to use long-form scrollable site with sticky menu to create effortless navigation of the site.',
+        text3: 'I started to design the site already on my Graphic Design 101 course starting from wireframes and style tiles. I created multiple iterations of the site before I landed on this one, so this was a process.',
+        text4: 'I was thrown to the deep end of the pool filled with ice-water and learned to swim. I learnt HTML/CSS and JavaScript on codeacademy.com and used my skills from there, and the help of my developer fiancé to create the website. I learnt to use Git and Heroku during this project.',
+      }
+    }
   about: {
     references: {
       title: 'Things said about Katja',
