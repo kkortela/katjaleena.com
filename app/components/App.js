@@ -4,6 +4,10 @@ import Cover from './Cover'
 import Cases from './Cases'
 import Footer from './Footer'
 import Work from './Work'
+import Amma from './cases/Amma'
+import DignityMeals from './cases/DignityMeals'
+import Instashop from './cases/Instashop'
+import WeddingWebsite from './cases/WeddingWebsite'
 import About from './About'
 import strings from '../strings'
 
@@ -26,7 +30,31 @@ export default class App extends React.Component {
     case 'work':
       return (
         <div>
-          <Work/>
+          <Work setPage={this.setPage}/>
+        </div>
+      )
+    case 'amma':
+      return (
+        <div>
+          <Amma/>
+        </div>
+      )
+    case 'dignity-meals':
+      return (
+        <div>
+          <DignityMeals/>
+        </div>
+      )
+    case 'instashop':
+      return (
+        <div>
+          <Instashop/>
+        </div>
+      )
+    case 'wedding-website':
+      return (
+        <div>
+          <WeddingWebsite/>
         </div>
       )
     case 'about':

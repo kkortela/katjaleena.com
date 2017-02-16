@@ -1,6 +1,6 @@
 import React from 'react'
 import styles from './cases.css'
-import images from '../config'
+import { images } from '../config'
 import strings from '../strings'
 
 const Cases = () => {

@@ -1,9 +1,10 @@
 import React from 'react'
 import styles from './work.css'
 import strings from '../strings'
-import images from '../config'
+import { images } from '../config'
+import { urlPaths } from '../config'
 
-const Work = () => {
+const Work = ({setPage}) => {
   const Case = ({img, title, text}, i) => {
     const isWide = i === 0 || i === 3
     const pureClasses = isWide ? 'pure-u-md-3-5' : 'pure-u-md-2-5'
@@ -15,7 +16,7 @@ const Work = () => {
           pure-u-1
           ${pureClasses}
           `} key={i}>
-        <a href="#" className={bgColor}>
+        <a className={bgColor} onClick={setPage.bind(undefined, urlPaths.cases[i])}>
           <img src={img}/>
           <div className={styles.textContent}>
             <div>

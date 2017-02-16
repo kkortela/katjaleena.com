@@ -1,7 +1,19 @@
 import strings from './strings'
 const {amma, instashop, wedding, dignity}  = strings.heroImages
 
-const images = [
+export const urlPaths = {
+    home: '/',
+    work: 'work',
+    about: 'about',
+    cases: [
+      'amma',
+      'dignity-meals',
+      'instashop',
+      'wedding-website'
+    ]
+}
+
+export const images = [
   {
     img: require(`../public/images/amma.png`),
     title: amma.title,
@@ -23,5 +35,3 @@ const images = [
     text: wedding.text,
   },
 ]
-
-export default images
