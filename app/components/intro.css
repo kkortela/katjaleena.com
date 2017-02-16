@@ -9,6 +9,7 @@
 
 .intro h1 {
   font-family: 'ShorelinesScript';
+  font-weight: 100;
   font-size: 42px;
   margin: 0;
 }
@@ -16,4 +17,5 @@
 .intro p {
   font-size: 30px;
   margin: 0;
+  font-weight: 300;
 }
