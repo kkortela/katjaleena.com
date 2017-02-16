@@ -157,7 +157,7 @@
       "before": false,
       "after": true
     }],
-    "space-after-keywords": 2,       // http://eslint.org/docs/rules/space-after-keywords
+    # "space-after-keywords": 2,       // http://eslint.org/docs/rules/space-after-keywords
     "space-before-blocks": 2,        // http://eslint.org/docs/rules/space-before-blocks
     "space-before-function-paren": [2, "never"], // http://eslint.org/docs/rules/space-before-function-paren
     "space-infix-ops": 2,            // http://eslint.org/docs/rules/space-infix-ops
@@ -175,8 +175,8 @@
     "react/jsx-sort-props": 0,
     "react/jsx-uses-react": 1,
     "react/jsx-uses-vars": 1,
-    "react/no-did-mount-set-state": [2, "allow-in-func"],
-    "react/no-did-update-set-state": 2,
+    # "react/no-did-mount-set-state": [2, "allow-in-func"],
+    # "react/no-did-update-set-state": 2,
     # "react/no-multi-comp": 2,
     "react/no-unknown-property": 2,
     "react/prop-types": 2,
