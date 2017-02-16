@@ -15,7 +15,7 @@ const Footer = () => {
     [require(`../../public/images/linkedin.svg`), 'https://fi.linkedin.com/in/katjakortelainen'],
     [require(`../../public/images/behance.svg`), 'https://www.behance.net/katjaleeena'],
     [require(`../../public/images/twitter.svg`), 'https://twitter.com/katjaleeena'],
-    [require(`../../public/images/instagram.svg`), 'https://www.instagram.com/katjaleeena/'],
+    [require(`../../public/images/github.svg`), 'https://github.com/kkortela'],
   ]
   return (
       <div className={`${styles.footer} pure-g`}>
