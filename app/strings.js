@@ -60,6 +60,7 @@ const strings = {
       text2: 'The challenge here was to really understand the asthmatics and their condition, and how they manage asthma. My research showed that the adult asthmatics have their condition controlled, but they would like to be notified of their medication, to measure their peak flows, and to monitor what affects and causes their worsening symptoms. Using this insight, I made it possible for the asthmatics to effortlessly create action plans, keep track of their peak flow and vitals, and be aware of the triggers.',
     },
     process: {
+      title: 'Process',
       research: {
         title: 'Research',
         text: 'I wanted to gain understanding of the situation of asthma in Finland, who suffer from it, and what methods for asthma management are on the market. Based on the findings I prepared an interview for adult asthmatics to understand their daily life. I learned that people have various types of asthma that needs different kind of attention, but still with modern medicine, the symptoms are well under control. This meant that adult asthmatics don’t have an urgent need for asthma management method. However, I found out that they would be interested to track their symptoms, get reminders for taking medicine and measure their peak flow, and see how different factors (weather, exercise) affect their condition. ',
@@ -75,7 +76,7 @@ const strings = {
         title: 'Interaction Design',
         text1: 'Using the user flows as a basis, I first sketched few ideas for the wireframes, and created them with Sketch. Since this was a project for Google, I wanted to apply material design to my designs. ',
         caption1: 'Sketches of my AMMA wireframes',
-        caption3: 'Wireframe screens of sign up, welcome screen, creating action plan, morning report, dashboard, and peak flow data.',
+        caption2: 'Wireframe screens of sign up, welcome screen, creating action plan, morning report, dashboard, and peak flow data.',
         text2: 'I used these wireframes to create a',
         link: 'prototype in Marvel',
         text3: 'for usability testing. I conducted remote usability tests and online click tests in Usability Hub. The tasks for the usability tests were to sign up to the app as a new user, create an action plan and follow the morning’s action plan. The goal was to find out the fluency of the tasks and where the errors occurred. ',
@@ -144,6 +145,7 @@ const strings = {
       text: 'The purpose of Dignity Meals was to match food donors with charities. The focus here was to decrease disposing of viable food surplus, and instead, donating it to nearby charities. My research showed that the restaurants that produce food surplus would be willing do donate it, and the receivers would gladly participate to the distribution of the donations. Using this insight, I created a way for the food donor and recepient to communicate. The donors could inform about donations or assign a donation to a certain charity. The recepients could find donations nearby or request a donation. ',
     },
     process: {
+      title: 'Process',
       research: {
         title: 'Research',
         text: 'The research phase was very interesting to me. I wanted to understand the situation of food donations in Finland, how the food surplus is divided between different sectors and how it is handled. I interviewed organizations who have experience on food delivery business, helping restaurants to sell food surplus or charity work. I received valuable information of the painpoints of donating and distributing food donations, and what actions would help to solve the problems. ',
