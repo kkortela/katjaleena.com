@@ -13,7 +13,7 @@
 .work > div {
   width: 85%;
   margin: 0 auto;
-  max-width: 768px;
+  max-width: 980px;
 }
 
 .work > h1 {
@@ -37,7 +37,7 @@
 }
 
 .wrapper img {
-  width: 250px;
+  width: 375px;
   vertical-align: top;
 }
 
@@ -67,7 +67,7 @@
   font-family: 'ShorelinesScript';
   font-weight: 100;
   text-transform: uppercase;
-  margin: 40px 0 0 0;
+  margin: 136px 0 0 0;
 }
 
 .textContent p {
