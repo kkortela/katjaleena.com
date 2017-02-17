@@ -8,7 +8,12 @@
   text-align: center;
   font-weight: bold;
   color: #006155;
-  text-transform: uppercase;
+}
+
+.about img {
+  margin: 0 auto;
+  width: 575px;
+  box-shadow:0 3px 7px #BFBFBF;
 }
 
 .referenceBlock {
