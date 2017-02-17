@@ -47,7 +47,9 @@
   line-height: 60px;
   font-family: 'ShorelinesScript';
   font-weight: 100;
-  margin: 40px 0 0 0;
+  margin: 50px 0 0 26px;
+  width: 223px;
+  text-align: center;
 }
 
 .textContent p {
