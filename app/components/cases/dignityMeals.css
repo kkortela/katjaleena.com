@@ -1,0 +1,33 @@
+.dignitymeals {
+  margin: 0 auto;
+  width: 575px;
+}
+
+.dignitymeals h1 {
+  color: #0B3F3C;
+  font-size: 48px;
+}
+
+.dignitymeals h2 {
+  text-transform: uppercase;
+  color: #0A6155;
+  text-align: center;
+  font-size: 36px;
+}
+
+.dignitymeals h3 {
+  text-transform: uppercase;
+  color: #0A6155;
+  font-weight: 500;
+  font-size: 20px;
+  margin-bottom: 0;
+}
+
+.dignitymeals p{
+  color: #545454;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 30px;
+  margin-top: 0;
+  letter-spacing: 0.4px;
+}

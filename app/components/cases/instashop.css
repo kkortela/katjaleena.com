@@ -6,6 +6,8 @@
 .instashop h1 {
   color: #0B3F3C;
   font-size: 48px;
+  text-transform: uppercase;
+  text-align: center;
 }
 
 .instashop h2 {
@@ -35,4 +37,14 @@
 .instashop img {
   width: 100%;
   box-shadow:0 3px 7px #BFBFBF;
+}
+
+.instashop a {
+  color: #5CA59B;
+  text-decoration: underline;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 30px;
+  margin-top: 0;
+  letter-spacing: 0.4px;
 }
