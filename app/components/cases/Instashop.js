@@ -6,7 +6,7 @@ const Instashop = () => {
   return (
     <div className={`${styles.instashop}`}>
       <h1>{strings.instashop.title}</h1>
-      <img src={require(`../../../public/images/instashop.png`)} />
+      <img src={require(`../../../public/images/instashop-cover.png`)} />
       <h2>{strings.instashop.summary.title}</h2>
       <p>{strings.instashop.summary.text}</p>
       <h2>{strings.instashop.process.title}</h2>
