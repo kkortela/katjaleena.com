@@ -1,10 +1,10 @@
 'use strict'
 
-var path = require('path')
-var webpack = require('webpack')
-var HtmlWebpackPlugin = require('html-webpack-plugin')
-var ExtractTextPlugin = require('extract-text-webpack-plugin')
-var StatsPlugin = require('stats-webpack-plugin')
+const path = require('path')
+const webpack = require('webpack')
+const HtmlWebpackPlugin = require('html-webpack-plugin')
+const ExtractTextPlugin = require('extract-text-webpack-plugin')
+const StatsPlugin = require('stats-webpack-plugin')
 
 module.exports = {
   entry: [
@@ -41,19 +41,28 @@ module.exports = {
     loaders: [{
       test: /\.jsx?$/,
       exclude: /node_modules/,
-      loader: 'babel',
+      loader: 'babel-loader',
       query: {
-        "presets": ["es2015", "stage-0", "react"]
+        "presets": ["react", "es2015", "stage-0",]
       }
     }, {
       test: /\.json?$/,
       loader: 'json'
     }, {
       test: /\.css$/,
-      loader: ExtractTextPlugin.extract('style', 'css?modules&localIdentName=[name]---[local]---[hash:base64:5]!postcss')
+      loader: 'style-loader!css-loader?modules&localIdentName=[name]---[local]---[hash:base64:5]'
+    }, {
+      test: /\.otf$/,
+      loader: 'url-loader?limit=10240&mimetype=application/x-font-opentype'
+    }, {
+      test: /\.jpg$/,
+      loader: "url-loader?limit=10000&mimetype=image/jpg"
+    }, {
+      test: /\.png$/,
+      loader: "url-loader?limit=10000&mimetype=image/png"
+    }, {
+      test: /\.svg$/,
+      loader: "svg-url-loader?limit=1024&mimetype=image/svg"
     }]
-  },
-  postcss: [
-    require('autoprefixer')
-  ]
+  }
 }
