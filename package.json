@@ -4,6 +4,7 @@
     "test": "",
     "start": "node server",
     "build": "rimraf dist && cross-env NODE_ENV=production webpack --config ./webpack.production.config.js --progress --profile --colors",
+    "postinstall": "npm run build",
     "eslint": "eslint .",
     "jscs": "jscs ."
   },
@@ -29,7 +30,7 @@
     "eslint": "^3.15.0",
     "eslint-plugin-react": "^6.9.0",
     "express": "^4.13.3",
-    "extract-text-webpack-plugin": "^1.0.1",
+    "extract-text-webpack-plugin": "^2.0.0-rc.3",
     "html-webpack-plugin": "^2.28.0",
     "jscs": "^3.0.7",
     "jsdom": "^9.10.0",
