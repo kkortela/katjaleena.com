@@ -5,7 +5,8 @@ import strings from '../../strings'
 const WeddingWebsite = () => {
   return (
     <div className={`${styles.instashop}`}>
-      <h1>{strings.wedding.title}</h1>
+      <h1 className={`${styles.hwed}`}>{strings.wedding.title}</h1>
+      <a className={`${styles.wedlink}`} href="http://www.mikatja.fi">{strings.wedding.link}</a>
       <img src={require(`../../../public/images/wedding-cover.jpg`)} />
       <h2>{strings.wedding.intro.summary.title}</h2>
       <p>{strings.wedding.intro.summary.text1}</p>

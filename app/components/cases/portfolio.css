@@ -54,3 +54,15 @@
   font-style: italic;
   text-align: center;
 }
+
+.wedlink {
+  font-size: 30px!important;
+  text-align: center!important;
+  text-decoration: none!important;
+  display: block;
+  margin-bottom: 20px;
+}
+
+.hwed {
+  margin-bottom: 5px!important;
+}
