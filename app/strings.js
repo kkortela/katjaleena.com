@@ -307,6 +307,7 @@ const strings = {
     },
   },
   about: {
+    caption: 'This is me, writing to You',
     intro: {
       title: 'I’m Katja,  glad to meet you!',
       text1: 'I’m Katja, an UX designer with background in Bioproduct Engineering (I know, right!). I’m pursuing a career as a UX Designer with emphasis on UI design. I currently live in Helsinki, Finland, but my roots are in Northern Karelia.',

@@ -7,12 +7,14 @@ const About = ({strings}) => {
       <div className={`pure-g ${styles.padding}}`}>
         <div className="pure-u-lg-1-2">
           <img src={require(`../../public/images/aboutme.jpg`)} />
+          <p className={styles.caption}>{strings.caption}</p>
         </div>
         <div className={`pure-u-lg-1-2 ${styles.aboutme}}`}>
           <h1>{strings.intro.title}</h1>
           <p className={styles.aboutme}>{strings.intro.text1}</p>
           <p className={styles.aboutme}>{strings.intro.text2}</p>
           <p className={styles.aboutme}>{strings.intro.text3}</p>
+          <button>DOWNLOAD MY RESUME</button>
         </div>
       </div>
       <h1>{strings.references.title}</h1>
