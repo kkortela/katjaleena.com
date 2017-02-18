@@ -7,7 +7,7 @@ import strings from '../strings'
 const Cases = ({setPage}) => {
   const Case = ({img, title, text}, i) => {
     return (
-      <div className={`${styles.wrapper} pure-u-1 pure-u-md-1-2 pure-u-lg-1-4`} key={i}>
+      <div className={`${styles.wrapper} pure-u-1 pure-u-lg-1-2 pure-u-xl-1-4`} key={i}>
         <a onClick={setPage.bind(undefined, urlPaths.cases[i])}>
           <img src={img}/>
           <div className={styles.textContent}>

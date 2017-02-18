@@ -66,3 +66,9 @@
 div.wrapper:hover .textContent {
   opacity: 1;
 }
+
+@media screen and (max-width: 1280px) {
+  .cases {
+    max-width: 680px;
+  }
+}
