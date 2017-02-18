@@ -73,13 +73,13 @@ const Instashop = () => {
       <img src={require(`../../../public/images/instashop-empathymap.png`)} />
       <p className={`${styles.caption}`}>{strings.instashop.process.strategy.caption2}</p>
       <p>{strings.instashop.process.strategy.text4}</p>
-      <img src={require(`../../../public/images/instashop-sitemap.png`)} />
+      <img className={`${styles.noshadow}`} src={require(`../../../public/images/instashop-sitemap.png`)} />
       <p className={`${styles.caption}`}>{strings.instashop.process.strategy.caption3}</p>
       <h3>{strings.instashop.process.ixda.title}</h3>
       <p>{strings.instashop.process.ixda.text1}</p>
       <img src={require(`../../../public/images/instashop-sketches.jpg`)} />
       <p className={`${styles.caption}`}>{strings.instashop.process.ixda.caption1}</p>
-      <img src={require(`../../../public/images/instashop-wireframes.png`)} />
+      <img className={`${styles.noshadow}`} src={require(`../../../public/images/instashop-wireframes.png`)} />
       <p className={`${styles.caption}`}>{strings.instashop.process.ixda.caption2}</p>
       <p>{strings.instashop.process.ixda.text2}</p>
       <p>{strings.instashop.process.ixda.text3}</p>

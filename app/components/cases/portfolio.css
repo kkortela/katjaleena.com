@@ -114,3 +114,7 @@
   display: block;
   margin: 60px auto 10px auto;
  }
+
+ .noshadow {
+   box-shadow: none!important;
+ }

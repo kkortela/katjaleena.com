@@ -71,7 +71,7 @@ const Amma = () => {
       <p>{strings.amma.process.ixda.text1}</p>
       <img src={require(`../../../public/images/amma-sketches.jpg`)} />
       <p className={`${styles.caption}`}>{strings.amma.process.ixda.caption1}</p>
-      <img src={require(`../../../public/images/amma-wireframes.png`)} />
+      <img className={`${styles.noshadow}`} src={require(`../../../public/images/amma-wireframes.png`)} />
       <p className={`${styles.caption}`}>{strings.amma.process.ixda.caption2}</p>
       <p>{strings.amma.process.ixda.text2}</p>
       <a href="https://marvelapp.com/2jab69j/screen/24607525">{strings.amma.process.ixda.link}</a>
@@ -80,7 +80,7 @@ const Amma = () => {
       <p>{strings.amma.process.uidesign.text1}</p>
       <img src={require(`../../../public/images/amma-styleguide.png`)} />
       <p>{strings.amma.process.uidesign.text2}</p>
-      <img src={require(`../../../public/images/amma-keyscreens.png`)} />
+      <img className={`${styles.noshadow}`} src={require(`../../../public/images/amma-keyscreens.png`)} />
       <h2>{strings.amma.process.reflection.title}</h2>
       <p>{strings.amma.process.reflection.text1}</p>
       <p>{strings.amma.process.reflection.text2}</p>
