@@ -89,7 +89,7 @@ const Instashop = () => {
       <p>{strings.instashop.process.uidesign.text1}</p>
       <img src={require(`../../../public/images/instashop-uikit.png`)} />
       <p>{strings.instashop.process.uidesign.text2}</p>
-      <img src={require(`../../../public/images/instashop.png`)} />
+      <img className={`${styles.cover}`} src={require(`../../../public/images/instashop-cover.png`)} />
       <h2>{strings.instashop.process.reflection.title}</h2>
       <p>{strings.instashop.process.reflection.text1}</p>
       <p>{strings.instashop.process.reflection.text2}</p>
