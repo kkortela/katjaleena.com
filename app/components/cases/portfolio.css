@@ -50,8 +50,7 @@
 }
 
 .caption {
-  font-size: 18px!
-  ;
+  font-size: 18px!important;
   font-style: italic;
   text-align: center;
 }
