@@ -37,19 +37,19 @@ export default class App extends React.Component {
     case 'amma':
       return (
         <div>
-          <Amma/>
+          <Amma setPage={this.setPage}/>
         </div>
       )
     case 'dignity-meals':
       return (
         <div>
-          <DignityMeals/>
+          <DignityMeals setPage={this.setPage}/>
         </div>
       )
     case 'instashop':
       return (
         <div>
-          <Instashop/>
+          <Instashop setPage={this.setPage}/>
         </div>
       )
     case 'wedding-website':

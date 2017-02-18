@@ -1,8 +1,9 @@
 import React from 'react'
+import NextBtn from './NextBtn'
 import styles from './portfolio.css'
 import strings from '../../strings'
 
-const DignityMeals = () => {
+const DignityMeals = ({setPage}) => {
   return (
     <div className={`${styles.instashop}`}>
       <h1>{strings.dignitymeals.title}</h1>
@@ -96,7 +97,7 @@ const DignityMeals = () => {
       <p>{strings.dignitymeals.process.reflection.text1}</p>
       <p>{strings.dignitymeals.process.reflection.text2}</p>
       <p>{strings.dignitymeals.process.reflection.text3}</p>
-      <button>NEXT</button>
+      <NextBtn setPage={setPage} nextPage={2}/>
     </div>
   )
 }

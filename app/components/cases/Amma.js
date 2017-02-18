@@ -1,8 +1,10 @@
 import React from 'react'
+import NextBtn from './NextBtn'
 import styles from './portfolio.css'
 import strings from '../../strings'
+import { urlPaths } from '../../config'
 
-const Amma = () => {
+const Amma = ({setPage}) => {
   return (
     <div className={`${styles.instashop}`}>
       <h1>{strings.amma.title}</h1>
@@ -84,7 +86,7 @@ const Amma = () => {
       <h2>{strings.amma.process.reflection.title}</h2>
       <p>{strings.amma.process.reflection.text1}</p>
       <p>{strings.amma.process.reflection.text2}</p>
-      <button>NEXT</button>
+      <NextBtn setPage={setPage} nextPage={1}/>
     </div>
   )
 }
