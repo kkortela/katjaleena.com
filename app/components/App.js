@@ -67,7 +67,7 @@ export default class App extends React.Component {
       return (
           <div>
             <Cover/>
-            <Cases/>
+            <Cases setPage={this.setPage}/>
           </div>
         )
     }
