@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from './instashop.css'
+import styles from './portfolio.css'
 import strings from '../../strings'
 
 const Instashop = () => {
@@ -16,7 +16,7 @@ const Instashop = () => {
       <p>{strings.instashop.process.strategy.text1}</p>
       <p>{strings.instashop.process.strategy.text2}</p>
       <img src={require(`../../../public/images/instashop-persona.png`)} />
-      <p>{strings.instashop.process.strategy.caption1}</p>
+      <p className={`${styles.caption}`}>{strings.instashop.process.strategy.caption1}</p>
       <p>{strings.instashop.process.strategy.text3}</p>
       <img src={require(`../../../public/images/instashop-empathymap.png`)} />
       <p>{strings.instashop.process.strategy.caption2}</p>

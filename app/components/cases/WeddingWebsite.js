@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from './instashop.css'
+import styles from './portfolio.css'
 import strings from '../../strings'
 
 const WeddingWebsite = () => {
