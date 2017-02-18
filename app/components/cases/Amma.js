@@ -84,6 +84,7 @@ const Amma = () => {
       <h2>{strings.amma.process.reflection.title}</h2>
       <p>{strings.amma.process.reflection.text1}</p>
       <p>{strings.amma.process.reflection.text2}</p>
+      <button>NEXT</button>
     </div>
   )
 }

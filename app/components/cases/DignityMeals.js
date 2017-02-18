@@ -96,6 +96,7 @@ const DignityMeals = () => {
       <p>{strings.dignitymeals.process.reflection.text1}</p>
       <p>{strings.dignitymeals.process.reflection.text2}</p>
       <p>{strings.dignitymeals.process.reflection.text3}</p>
+      <button>NEXT</button>
     </div>
   )
 }

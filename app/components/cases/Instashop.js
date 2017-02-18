@@ -95,6 +95,7 @@ const Instashop = () => {
       <p>{strings.instashop.process.reflection.text1}</p>
       <p>{strings.instashop.process.reflection.text2}</p>
       <p>{strings.instashop.process.reflection.text3}</p>
+      <button>NEXT</button>
     </div>
   )
 }

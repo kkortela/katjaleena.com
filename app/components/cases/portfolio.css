@@ -70,8 +70,8 @@
   font-size: 30px!important;
   text-align: center!important;
   text-decoration: none!important;
-  display: block;
-  margin-bottom: 20px;
+  display: block!important;
+  margin-bottom: 20px!important;
 }
 
 .hwed {
@@ -125,4 +125,21 @@
 .inline {
   display: inline;
   margin: 0;
+}
+
+.instashop button {
+  background-color: #0A6155;
+  border: none;
+  color: white;
+  font-weight: 500;
+  font-size: 20px;
+  text-transform: uppercase;
+  text-align: center;
+  display: inline-block;
+  border-radius: 30px;
+  padding: 10px 50px;
+  margin: 50px auto 0 auto;
+  display: block;
+  box-shadow:0 2px 4px #BFBFBF;
+  letter-spacing: 1px;
 }
