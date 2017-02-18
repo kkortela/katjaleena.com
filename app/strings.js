@@ -289,11 +289,11 @@ const strings = {
         subtitle: 'Project:',
         text: 'Creating responsive website for our wedding',
       },
-      intro3: {
+      intro2: {
         subtitle: 'Goal:',
         text: 'To give information about the wedding for the guests and also a place for registration',
       },
-      intro4: {
+      intro3: {
         subtitle: 'My role:',
         text: 'Visual Design and Front-end development',
       },

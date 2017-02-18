@@ -6,7 +6,59 @@ const Instashop = () => {
   return (
     <div className={`${styles.instashop}`}>
       <h1>{strings.instashop.title}</h1>
-      <img src={require(`../../../public/images/instashop-cover.png`)} />
+      <img className={`${styles.cover}`} src={require(`../../../public/images/instashop-cover.png`)} />
+        <div className={`${styles.intro}`}>
+          <span>{strings.instashop.intro.intro1.subtitle}</span>
+          <p>{strings.instashop.intro.intro1.text}</p>
+        </div>
+        <div className={`${styles.intro}`}>
+          <span>{strings.instashop.intro.intro2.subtitle}</span>
+          <p>{strings.instashop.intro.intro2.text}</p>
+        </div>
+        <div className={`${styles.intro}`}>
+          <span>{strings.instashop.intro.intro3.subtitle}</span>
+          <p>{strings.instashop.intro.intro3.text}</p>
+        </div>
+        <div className={`${styles.intro}`}>
+          <span>{strings.instashop.intro.intro4.subtitle}</span>
+          <p>{strings.instashop.intro.intro4.text}</p>
+        </div>
+        <div className={`pure-g ${styles.processmain}`}>
+          <div className={`pure-u-lg-1-4 ${styles.process}`}>
+            <img className={`${styles.icon}`} src={require(`../../../public/images/research-icon.svg`)} />
+            <span>{strings.instashop.processsteps.step1.subtitle}</span>
+            <p>{strings.instashop.processsteps.step1.text1}</p>
+            <p>{strings.instashop.processsteps.step1.text2}</p>
+            <p>{strings.instashop.processsteps.step1.text3}</p>
+          </div>
+          <div className={`pure-u-lg-1-4 ${styles.process}`}>
+            <img className={`${styles.icon}`} src={require(`../../../public/images/strategy-icon.svg`)} />
+            <span>{strings.instashop.processsteps.step2.subtitle}</span>
+            <p>{strings.instashop.processsteps.step2.text1}</p>
+            <p>{strings.instashop.processsteps.step2.text2}</p>
+            <p>{strings.instashop.processsteps.step2.text3}</p>
+            <p>{strings.instashop.processsteps.step2.text4}</p>
+            <p>{strings.instashop.processsteps.step2.text5}</p>
+            <p>{strings.instashop.processsteps.step2.text6}</p>
+            <p>{strings.instashop.processsteps.step2.text7}</p>
+            <p>{strings.instashop.processsteps.step2.text8}</p>
+          </div>
+          <div className={`pure-u-lg-1-4 ${styles.process}`}>
+            <img className={`${styles.icon}`} src={require(`../../../public/images/ixd-icon.svg`)} />
+            <span>{strings.instashop.processsteps.step3.subtitle}</span>
+            <p>{strings.instashop.processsteps.step3.text1}</p>
+            <p>{strings.instashop.processsteps.step3.text2}</p>
+            <p>{strings.instashop.processsteps.step3.text3}</p>
+            <p>{strings.instashop.processsteps.step3.text4}</p>
+          </div>
+          <div className={`pure-u-lg-1-4 ${styles.process}`}>
+            <img className={`${styles.icon}`} src={require(`../../../public/images/ui-icon.svg`)} />
+            <span>{strings.instashop.processsteps.step4.subtitle}</span>
+            <p>{strings.instashop.processsteps.step4.text1}</p>
+            <p>{strings.instashop.processsteps.step4.text2}</p>
+            <p>{strings.instashop.processsteps.step4.text3}</p>
+          </div>
+        </div>
       <h2>{strings.instashop.summary.title}</h2>
       <p>{strings.instashop.summary.text}</p>
       <h2>{strings.instashop.process.title}</h2>

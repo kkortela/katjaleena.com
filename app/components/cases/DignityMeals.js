@@ -6,7 +6,54 @@ const DignityMeals = () => {
   return (
     <div className={`${styles.instashop}`}>
       <h1>{strings.dignitymeals.title}</h1>
-      <img src={require(`../../../public/images/dignitymeals-cover.jpg`)} />
+      <img className={`${styles.cover}`} src={require(`../../../public/images/dignitymeals-cover.jpg`)} />
+        <div className={`${styles.intro}`}>
+          <span>{strings.dignitymeals.intro.intro1.subtitle}</span>
+          <p>{strings.dignitymeals.intro.intro1.text}</p>
+        </div>
+        <div className={`${styles.intro}`}>
+          <span>{strings.dignitymeals.intro.intro2.subtitle}</span>
+          <p>{strings.dignitymeals.intro.intro2.text}</p>
+        </div>
+        <div className={`${styles.intro}`}>
+          <span>{strings.dignitymeals.intro.intro3.subtitle}</span>
+          <p>{strings.dignitymeals.intro.intro3.text}</p>
+        </div>
+        <div className={`${styles.intro}`}>
+          <span>{strings.dignitymeals.intro.intro4.subtitle}</span>
+          <p>{strings.dignitymeals.intro.intro4.text}</p>
+        </div>
+        <div className={`pure-g ${styles.processmain}`}>
+          <div className={`pure-u-lg-1-4 ${styles.process}`}>
+            <img className={`${styles.icon}`} src={require(`../../../public/images/research-icon.svg`)} />
+            <span>{strings.dignitymeals.processsteps.step1.subtitle}</span>
+            <p>{strings.dignitymeals.processsteps.step1.text1}</p>
+            <p>{strings.dignitymeals.processsteps.step1.text2}</p>
+            <p>{strings.dignitymeals.processsteps.step1.text3}</p>
+          </div>
+          <div className={`pure-u-lg-1-4 ${styles.process}`}>
+            <img className={`${styles.icon}`} src={require(`../../../public/images/strategy-icon.svg`)} />
+            <span>{strings.dignitymeals.processsteps.step2.subtitle}</span>
+            <p>{strings.dignitymeals.processsteps.step2.text1}</p>
+            <p>{strings.dignitymeals.processsteps.step2.text2}</p>
+            <p>{strings.dignitymeals.processsteps.step2.text3}</p>
+            <p>{strings.dignitymeals.processsteps.step2.text4}</p>
+          </div>
+          <div className={`pure-u-lg-1-4 ${styles.process}`}>
+            <img className={`${styles.icon}`} src={require(`../../../public/images/ixd-icon.svg`)} />
+            <span>{strings.dignitymeals.processsteps.step3.subtitle}</span>
+            <p>{strings.dignitymeals.processsteps.step3.text1}</p>
+            <p>{strings.dignitymeals.processsteps.step3.text2}</p>
+            <p>{strings.dignitymeals.processsteps.step3.text3}</p>
+          </div>
+          <div className={`pure-u-lg-1-4 ${styles.process}`}>
+            <img className={`${styles.icon}`} src={require(`../../../public/images/ui-icon.svg`)} />
+            <span>{strings.dignitymeals.processsteps.step4.subtitle}</span>
+            <p>{strings.dignitymeals.processsteps.step4.text1}</p>
+            <p>{strings.dignitymeals.processsteps.step4.text2}</p>
+            <p>{strings.dignitymeals.processsteps.step4.text3}</p>
+          </div>
+        </div>
       <h2>{strings.dignitymeals.summary.title}</h2>
       <p>{strings.dignitymeals.summary.text}</p>
       <h2>{strings.dignitymeals.process.title}</h2>
