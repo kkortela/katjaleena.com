@@ -61,8 +61,14 @@ const DignityMeals = () => {
       <p>{strings.dignitymeals.process.research.text}</p>
       <img className={`${styles.noshadow}`} src={require(`../../../public/images/dignitymeals-chart.png`)} />
       <p className={`${styles.caption}`}>{strings.dignitymeals.process.research.caption1}</p>
-      <p>{strings.dignitymeals.process.research.citation1}</p>
-      <p>{strings.dignitymeals.process.research.citation2}</p>
+      <div className="pure-g">
+        <div className="pure-u-lg-1-2">
+          <p className={`${styles.citation}`}>{strings.dignitymeals.process.research.citation1}</p>
+        </div>
+        <div className="pure-u-lg-1-2">
+          <p className={`${styles.citation}`}>{strings.dignitymeals.process.research.citation2}</p>
+        </div>
+      </div>
       <h3>{strings.dignitymeals.process.strategy.title}</h3>
       <p>{strings.dignitymeals.process.strategy.text1}</p>
       <p>{strings.dignitymeals.process.strategy.text2}</p>
@@ -77,8 +83,9 @@ const DignityMeals = () => {
       <p className={`${styles.caption}`}>{strings.dignitymeals.process.ixda.caption1}</p>
       <img className={`${styles.noshadow}`} src={require(`../../../public/images/dignitymeals-wireframes.png`)} />
       <p className={`${styles.caption}`}>{strings.dignitymeals.process.ixda.caption2}</p>
-      <p>{strings.dignitymeals.process.ixda.text2}</p>
-      <p>{strings.dignitymeals.process.ixda.text3}</p>
+      <p className={`${styles.inline}`}>{strings.dignitymeals.process.ixda.text2}</p>
+      <a className={`${styles.inline}`} href="https://marvelapp.com/1jd7g6h/screen/18283717">{strings.dignitymeals.process.ixda.link}</a>
+      <p className={`${styles.inline}`}>{strings.dignitymeals.process.ixda.text3}</p>
       <p>{strings.dignitymeals.process.ixda.text4}</p>
       <h3>{strings.dignitymeals.process.uidesign.title}</h3>
       <p>{strings.dignitymeals.process.uidesign.text1}</p>
