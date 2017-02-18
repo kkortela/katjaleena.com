@@ -22,6 +22,7 @@ export default class App extends React.Component {
     this.setState({page: page})
     const stateObj = {page: page}
     history.pushState(stateObj, 'Katja Kortelainen', page)
+    window.scrollTo(0,0)
     console.log(this.state)
   }
   showPage(page) {
