@@ -5,16 +5,20 @@ const About = ({strings}) => {
   return (
     <div className={styles.about}>
       <div className={`pure-g ${styles.padding}}`}>
-        <div className="pure-u-lg-1-2">
-          <img src={require(`../../public/images/aboutme.jpg`)} />
-          <p className={styles.caption}>{strings.caption}</p>
+        <div className="pure-u-1 pure-u-lg-1-3 pure-u-xl-1-2">
+          <div className={styles.imgWrapper}>
+            <img src={require(`../../public/images/aboutme.jpg`)} />
+            <p className={styles.caption}>{strings.caption}</p>
+          </div>
         </div>
-        <div className={`pure-u-lg-1-2 ${styles.aboutme}}`}>
-          <h1>{strings.intro.title}</h1>
-          <p className={styles.aboutme}>{strings.intro.text1}</p>
-          <p className={styles.aboutme}>{strings.intro.text2}</p>
-          <p className={styles.aboutme}>{strings.intro.text3}</p>
-          <button>DOWNLOAD MY RESUME</button>
+        <div className={`pure-u-1 pure-u-lg-2-3 pure-u-xl-1-2`}>
+          <div className={styles.aboutme}>
+            <h1>{strings.intro.title}</h1>
+            <p className={styles.aboutme}>{strings.intro.text1}</p>
+            <p className={styles.aboutme}>{strings.intro.text2}</p>
+            <p className={styles.aboutme}>{strings.intro.text3}</p>
+            <button>DOWNLOAD MY RESUME</button>
+          </div>
         </div>
       </div>
       <h1>{strings.references.title}</h1>

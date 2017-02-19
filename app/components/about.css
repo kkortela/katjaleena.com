@@ -19,8 +19,13 @@
   line-height: 30px;
   letter-spacing: 0.4px;
   text-align: left;
-
+  margin: 0 0 40px 20px;
 }
+
+.aboutme h1 {
+  margin-top: 0;
+}
+
 
 .about img {
   width: 100%;
@@ -76,4 +81,17 @@
   box-shadow:0 2px 4px #BFBFBF;
   letter-spacing: 1px;
   font-family: 'BrandonGrotesque';
+}
+
+@media screen and (max-width: 1280px) and (min-width: 1024px) {
+  .about img {
+    margin-top: 60px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .imgWrapper {
+    margin:0 auto;
+    width: 75%;
+  }
 }
