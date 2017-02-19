@@ -6,7 +6,7 @@ import { urlPaths } from '../../config'
 
 const Amma = () => {
   return (
-    <div className={`${styles.instashop}`}>
+    <div className={`${styles.portfolio}`}>
       <h1>{strings.amma.title}</h1>
       <img className={`${styles.cover}`} src={require(`../../../public/images/amma-cover.jpg`)} />
       <div className={`${styles.intro}`}>

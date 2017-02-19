@@ -5,7 +5,7 @@ import strings from '../../strings'
 
 const Instashop = () => {
   return (
-    <div className={`${styles.instashop}`}>
+    <div className={`${styles.portfolio}`}>
       <h1>{strings.instashop.title}</h1>
       <img className={`${styles.cover}`} src={require(`../../../public/images/instashop-cover.png`)} />
         <div className={`${styles.intro}`}>

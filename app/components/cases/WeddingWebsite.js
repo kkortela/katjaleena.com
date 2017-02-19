@@ -4,7 +4,7 @@ import strings from '../../strings'
 
 const WeddingWebsite = () => {
   return (
-    <div className={`${styles.instashop}`}>
+    <div className={`${styles.portfolio}`}>
       <h1 className={`${styles.hwed}`}>{strings.wedding.title}</h1>
       <a className={`${styles.wedlink}`} href="http://www.mikatja.fi">{strings.wedding.link}</a>
       <img className={`${styles.cover}`} src={require(`../../../public/images/wedding-cover.jpg`)} />

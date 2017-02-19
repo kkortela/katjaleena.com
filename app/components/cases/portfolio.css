@@ -1,23 +1,23 @@
-.instashop {
+.portfolio {
   margin: 0 auto;
   width: 575px;
 }
 
-.instashop h1 {
+.portfolio h1 {
   color: #0B3F3C;
   font-size: 48px;
   text-transform: uppercase;
   text-align: center;
 }
 
-.instashop h2 {
+.portfolio h2 {
   text-transform: uppercase;
   color: #0A6155;
   text-align: center;
   font-size: 36px;
 }
 
-.instashop h3 {
+.portfolio h3 {
   text-transform: uppercase;
   color: #0A6155;
   font-weight: 500;
@@ -25,7 +25,7 @@
   margin-bottom: 0;
 }
 
-.instashop p {
+.portfolio p {
   color: #545454;
   font-weight: 300;
   font-size: 20px;
@@ -33,12 +33,12 @@
   letter-spacing: 0.4px;
 }
 
-.instashop img {
+.portfolio img {
   width: 100%;
   box-shadow:0 3px 7px #BFBFBF;
 }
 
-.instashop a {
+.portfolio a {
   color: #5CA59B;
   text-decoration: underline;
   font-weight: 300;
