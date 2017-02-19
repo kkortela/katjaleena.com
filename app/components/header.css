@@ -1,7 +1,12 @@
 .logo {
   float:left;
   cursor: pointer;
-  height: 54px;
+  width: 153px;
+}
+
+.logo img {
+  width: 100%;
+  height: 100%;
 }
 
 .header {
