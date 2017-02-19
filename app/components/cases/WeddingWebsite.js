@@ -7,7 +7,7 @@ const WeddingWebsite = () => {
   return (
     <CaseWrapper>
       <h1 className={`${styles.hwed}`}>{strings.wedding.title}</h1>
-      <a className={`${styles.wedlink}`} href="http://www.mikatja.fi">{strings.wedding.link}</a>
+      <a target="_blank" className={`${styles.wedlink}`} href="http://www.mikatja.fi">{strings.wedding.link}</a>
       <img className={`${styles.cover}`} src={require(`../../../public/images/wedding-cover.jpg`)} />
       <div className={`${styles.intro}`}>
         <span>{strings.wedding.intro.intro1.subtitle}</span>

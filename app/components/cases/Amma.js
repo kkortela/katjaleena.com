@@ -76,7 +76,7 @@ const Amma = () => {
       <img className={`${styles.noshadow}`} src={require(`../../../public/images/amma-wireframes.png`)} />
       <p className={`${styles.caption}`}>{strings.amma.process.ixda.caption2}</p>
       <p className={`${styles.inline}`}>{strings.amma.process.ixda.text2}</p>
-      <a href="https://marvelapp.com/2jab69j/screen/24607525">{strings.amma.process.ixda.link}</a>
+      <a target="_blank" href="https://marvelapp.com/2jab69j/screen/24607525">{strings.amma.process.ixda.link}</a>
       <p className={`${styles.inline}`}>{strings.amma.process.ixda.text3}</p>
       <h3>{strings.amma.process.uidesign.title}</h3>
       <p>{strings.amma.process.uidesign.text1}</p>

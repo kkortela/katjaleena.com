@@ -86,7 +86,7 @@ const DignityMeals = () => {
       <img className={`${styles.noshadow}`} src={require(`../../../public/images/dignitymeals-wireframes.png`)} />
       <p className={`${styles.caption}`}>{strings.dignitymeals.process.ixda.caption2}</p>
       <p className={`${styles.inline}`}>{strings.dignitymeals.process.ixda.text2}</p>
-      <a className={`${styles.inline}`} href="https://marvelapp.com/1jd7g6h/screen/18283717">{strings.dignitymeals.process.ixda.link}</a>
+      <a target="_blank" className={`${styles.inline}`} href="https://marvelapp.com/1jd7g6h/screen/18283717">{strings.dignitymeals.process.ixda.link}</a>
       <p className={`${styles.inline}`}>{strings.dignitymeals.process.ixda.text3}</p>
       <p>{strings.dignitymeals.process.ixda.text4}</p>
       <h3>{strings.dignitymeals.process.uidesign.title}</h3>

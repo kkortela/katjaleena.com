@@ -85,7 +85,7 @@ const Instashop = () => {
       <p className={`${styles.caption}`}>{strings.instashop.process.ixda.caption2}</p>
       <p>{strings.instashop.process.ixda.text2}</p>
       <p className={`${styles.inline}`}>{strings.instashop.process.ixda.text3}</p>
-      <a href="https://invis.io/YCAIQRJEV#/211249122_Homepage">{strings.instashop.process.ixda.link}</a>
+      <a target="_blank" href="https://invis.io/YCAIQRJEV#/211249122_Homepage">{strings.instashop.process.ixda.link}</a>
       <p className={`${styles.inline}`}>{strings.instashop.process.ixda.text4}</p>
       <p>{strings.instashop.process.ixda.text5}</p>
       <h3>{strings.instashop.process.uidesign.title}</h3>
