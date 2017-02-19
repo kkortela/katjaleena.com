@@ -1,10 +1,11 @@
 import React from 'react'
 import styles from './portfolio.css'
 import strings from '../../strings'
+import CaseWrapper from './CaseWrapper'
 
 const WeddingWebsite = () => {
   return (
-    <div className={`${styles.portfolio}`}>
+    <CaseWrapper>
       <h1 className={`${styles.hwed}`}>{strings.wedding.title}</h1>
       <a className={`${styles.wedlink}`} href="http://www.mikatja.fi">{strings.wedding.link}</a>
       <img className={`${styles.cover}`} src={require(`../../../public/images/wedding-cover.jpg`)} />
@@ -25,7 +26,7 @@ const WeddingWebsite = () => {
       <p>{strings.wedding.intro.summary.text2}</p>
       <p>{strings.wedding.intro.summary.text3}</p>
       <p>{strings.wedding.intro.summary.text4}</p>
-    </div>
+    </CaseWrapper>
   )
 }
 

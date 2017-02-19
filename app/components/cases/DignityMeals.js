@@ -2,10 +2,11 @@ import React from 'react'
 import NextBtn from './NextBtn'
 import styles from './portfolio.css'
 import strings from '../../strings'
+import CaseWrapper from './CaseWrapper'
 
 const DignityMeals = () => {
   return (
-    <div className={`${styles.portfolio}`}>
+    <CaseWrapper nextPage={2}>
       <h1>{strings.dignitymeals.title}</h1>
       <img className={`${styles.cover}`} src={require(`../../../public/images/dignitymeals-cover.jpg`)} />
         <div className={`${styles.intro}`}>
@@ -97,8 +98,7 @@ const DignityMeals = () => {
       <p>{strings.dignitymeals.process.reflection.text1}</p>
       <p>{strings.dignitymeals.process.reflection.text2}</p>
       <p>{strings.dignitymeals.process.reflection.text3}</p>
-      <NextBtn nextPage={2}/>
-    </div>
+    </CaseWrapper>
   )
 }
 

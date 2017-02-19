@@ -1,12 +1,12 @@
 import React from 'react'
-import NextBtn from './NextBtn'
 import styles from './portfolio.css'
 import strings from '../../strings'
 import { urlPaths } from '../../config'
+import CaseWrapper from './CaseWrapper'
 
 const Amma = () => {
   return (
-    <div className={`${styles.portfolio}`}>
+    <CaseWrapper nextPage={1}>
       <h1>{strings.amma.title}</h1>
       <img className={`${styles.cover}`} src={require(`../../../public/images/amma-cover.jpg`)} />
       <div className={`${styles.intro}`}>
@@ -86,8 +86,7 @@ const Amma = () => {
       <h2>{strings.amma.process.reflection.title}</h2>
       <p>{strings.amma.process.reflection.text1}</p>
       <p>{strings.amma.process.reflection.text2}</p>
-      <NextBtn nextPage={1}/>
-    </div>
+    </CaseWrapper>
   )
 }
 

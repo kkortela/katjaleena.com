@@ -2,10 +2,11 @@ import React from 'react'
 import NextBtn from './NextBtn'
 import styles from './portfolio.css'
 import strings from '../../strings'
+import CaseWrapper from './CaseWrapper'
 
 const Instashop = () => {
   return (
-    <div className={`${styles.portfolio}`}>
+    <CaseWrapper nextPage={3}>
       <h1>{strings.instashop.title}</h1>
       <img className={`${styles.cover}`} src={require(`../../../public/images/instashop-cover.png`)} />
         <div className={`${styles.intro}`}>
@@ -96,8 +97,7 @@ const Instashop = () => {
       <p>{strings.instashop.process.reflection.text1}</p>
       <p>{strings.instashop.process.reflection.text2}</p>
       <p>{strings.instashop.process.reflection.text3}</p>
-      <NextBtn nextPage={3}/>
-    </div>
+    </CaseWrapper>
   )
 }
 
