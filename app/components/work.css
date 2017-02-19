@@ -10,6 +10,22 @@
   background-color: #5CA59B;
 }
 
+.work div div:nth-child(1) a {
+  background-color: #84D2F6;
+}
+
+.work div div:nth-child(2) a {
+  background-color: #FFD166;
+}
+
+.work div div:nth-child(3) a {
+  background-color: #EF2D56;
+}
+
+.work div div:nth-child(4) a {
+  background-color: #A997DF;
+}
+
 .work > div {
   width: 85%;
   margin: 0 auto;
@@ -51,7 +67,7 @@
 
 .textContent {
   color: white;
-  background: rgba(10,97,85,0.75);
+  background: rgba(0,0,0,0.5);
   cursor: pointer;
   height: 100%;
   left: 0;
