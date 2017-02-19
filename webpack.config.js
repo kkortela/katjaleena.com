@@ -52,6 +52,9 @@ module.exports = {
       test: /\.png$/,
       loader: "url-loader?limit=10000&mimetype=image/png"
     }, {
+      test: /\.pdf$/,
+      loader: "url-loader?limit=1&mimetype=application/pdf"
+    }, {
       test: /\.svg$/,
       loader: "svg-url-loader?limit=1024&mimetype=image/svg"
     }]
