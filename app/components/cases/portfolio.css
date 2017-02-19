@@ -127,19 +127,26 @@
   margin: 0;
 }
 
-.instashop button {
+a.link {
   background-color: #0A6155;
   border: none;
   color: white;
   font-weight: 500;
   font-size: 20px;
   text-transform: uppercase;
+  text-decoration: none;
   text-align: center;
-  display: inline-block;
+  display: block;
   border-radius: 30px;
   padding: 10px 50px;
   margin: 50px auto 0 auto;
   display: block;
   box-shadow:0 2px 4px #BFBFBF;
   letter-spacing: 1px;
+  white-space: nowrap;
+  width: 60px;
+}
+
+a.link:focus {
+  outline: none;
 }

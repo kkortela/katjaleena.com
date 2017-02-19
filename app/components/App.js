@@ -14,42 +14,32 @@ import strings from '../strings'
 export default class App extends React.Component {
   constructor(props) {
     super(props)
-    const page = location.pathname.slice(1)
-    this.state = {page}
-    this.setPage = this.setPage.bind(this)
-  }
-  setPage(page) {
-    this.setState({page: page})
-    const stateObj = {page: page}
-    history.pushState(stateObj, 'Katja Kortelainen', page)
-    window.scrollTo(0,0)
-    console.log(this.state)
+    const page = this.props.location[0]
   }
   showPage(page) {
-    console.log('showPage', page)
     switch (page) {
     case 'work':
       return (
         <div>
-          <Work setPage={this.setPage}/>
+          <Work/>
         </div>
       )
     case 'amma':
       return (
         <div>
-          <Amma setPage={this.setPage}/>
+          <Amma/>
         </div>
       )
     case 'dignity-meals':
       return (
         <div>
-          <DignityMeals setPage={this.setPage}/>
+          <DignityMeals/>
         </div>
       )
     case 'instashop':
       return (
         <div>
-          <Instashop setPage={this.setPage}/>
+          <Instashop/>
         </div>
       )
     case 'wedding-website':
@@ -68,7 +58,7 @@ export default class App extends React.Component {
       return (
           <div>
             <Cover/>
-            <Cases setPage={this.setPage}/>
+            <Cases/>
           </div>
         )
     }
@@ -77,8 +67,8 @@ export default class App extends React.Component {
   render() {
     return (
       <div>
-        <Header setPage={this.setPage}/>
-        {this.showPage(this.state.page)}
+        <Header/>
+        {this.showPage(this.props.location[0])}
         <Footer/>
       </div>
     )

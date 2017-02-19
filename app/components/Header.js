@@ -1,20 +1,23 @@
+
 import React from 'react'
 import styles from './header.css'
+import { urlPaths } from '../config'
 
-const Header = ({setPage}) => {
-  const navigate = (event) => {
-    setPage(event)
-  }
+const Header = () => {
   const imgUrl = require(`../../public/images/katjaleena-logo.png`)
   return (
       <div className={styles.header}>
-        <div className={styles.logo} onClick={navigate.bind(null, '/')}>
+        <a href={`#`} className={styles.logo}>
           <img src={imgUrl}/>
-        </div>
+        </a>
         <div className={styles.nav}>
           <ul>
-            <li><div className={styles.btn} onClick={navigate.bind(null, 'work')}>My work</div></li>
-            <li><div className={styles.btn} onClick={navigate.bind(null, 'about')}>About me</div></li>
+            <li>
+              <a href={`#${urlPaths.work}`} className={styles.link}>My work</a>
+            </li>
+            <li>
+              <a href={`#${urlPaths.about}`} className={styles.link}>About me</a>
+            </li>
           </ul>
         </div>
       </div>

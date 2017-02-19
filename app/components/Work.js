@@ -4,7 +4,7 @@ import strings from '../strings'
 import { images } from '../config'
 import { urlPaths } from '../config'
 
-const Work = ({setPage}) => {
+const Work = () => {
   const Case = ({img, title, text}, i) => {
     const isWide = i === 0 || i === 3
     const pureClasses = isWide ? 'pure-u-md-3-5' : 'pure-u-md-2-5'
@@ -16,7 +16,7 @@ const Work = ({setPage}) => {
           pure-u-1
           ${pureClasses}
           `} key={i}>
-        <a className={bgColor} onClick={setPage.bind(undefined, urlPaths.cases[i])}>
+        <a className={bgColor} href={`#${urlPaths.cases[i]}`}>
           <img src={img}/>
           <div className={styles.textContent}>
             <div>

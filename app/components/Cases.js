@@ -4,11 +4,11 @@ import { images } from '../config'
 import { urlPaths } from '../config'
 import strings from '../strings'
 
-const Cases = ({setPage}) => {
+const Cases = () => {
   const Case = ({img, title, text}, i) => {
     return (
       <div className={`${styles.wrapper} pure-u-1 pure-u-lg-1-2 pure-u-xl-1-4`} key={i}>
-        <a onClick={setPage.bind(undefined, urlPaths.cases[i])}>
+        <a href={`#${urlPaths.cases[i]}`}>
           <img src={img}/>
           <div className={styles.textContent}>
             <div>

@@ -4,9 +4,11 @@ import { images } from '../../config'
 import { urlPaths } from '../../config'
 import strings from '../../strings'
 
-const nextBtn = ({setPage, nextPage}) => {
+const nextBtn = ({nextPage}) => {
   return (
-      <button onClick={setPage.bind(undefined, urlPaths.cases[nextPage])}>NEXT</button>
+    <a href={`#${urlPaths.cases[nextPage]}`} className={styles.link}>
+      Next
+    </a>
   )
 }
 

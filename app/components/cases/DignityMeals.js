@@ -3,7 +3,7 @@ import NextBtn from './NextBtn'
 import styles from './portfolio.css'
 import strings from '../../strings'
 
-const DignityMeals = ({setPage}) => {
+const DignityMeals = () => {
   return (
     <div className={`${styles.instashop}`}>
       <h1>{strings.dignitymeals.title}</h1>
@@ -97,7 +97,7 @@ const DignityMeals = ({setPage}) => {
       <p>{strings.dignitymeals.process.reflection.text1}</p>
       <p>{strings.dignitymeals.process.reflection.text2}</p>
       <p>{strings.dignitymeals.process.reflection.text3}</p>
-      <NextBtn setPage={setPage} nextPage={2}/>
+      <NextBtn nextPage={2}/>
     </div>
   )
 }

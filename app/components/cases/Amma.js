@@ -4,7 +4,7 @@ import styles from './portfolio.css'
 import strings from '../../strings'
 import { urlPaths } from '../../config'
 
-const Amma = ({setPage}) => {
+const Amma = () => {
   return (
     <div className={`${styles.instashop}`}>
       <h1>{strings.amma.title}</h1>
@@ -86,7 +86,7 @@ const Amma = ({setPage}) => {
       <h2>{strings.amma.process.reflection.title}</h2>
       <p>{strings.amma.process.reflection.text1}</p>
       <p>{strings.amma.process.reflection.text2}</p>
-      <NextBtn setPage={setPage} nextPage={1}/>
+      <NextBtn nextPage={1}/>
     </div>
   )
 }
