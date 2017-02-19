@@ -83,6 +83,19 @@
   font-family: 'BrandonGrotesque';
 }
 
+.about button:focus {
+  outline: none;
+}
+
+.about button:hover {
+  background-color: #5CA59B;
+}
+
+.about button:active {
+  background-color: #5CA59B;
+  box-shadow: inset 0 1px 5px #BFBFBF;
+}
+
 @media screen and (max-width: 1280px) and (min-width: 1024px) {
   .about img {
     margin-top: 60px;
