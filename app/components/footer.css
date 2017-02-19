@@ -12,4 +12,30 @@
   display: block;
   margin: 0 auto;
   width: 48px;
+  height: 48px;
+  background-image: url(../../public/images/linkedin.svg);
+}
+
+.footer:nth-child(1) {
+  display: block;
+  margin: 0 auto;
+  width: 48px;
+  height: 48px;
+  background-image: url(../../public/images/behance.svg);
+}
+
+.footer:nth-child(2) {
+  display: block;
+  margin: 0 auto;
+  width: 48px;
+  height: 48px;
+  background-image: url(../../public/images/twitter.svg);
+}
+
+.footer:nth-child(3) {
+  display: block;
+  margin: 0 auto;
+  width: 48px;
+  height: 48px;
+  background-image: url(../../public/images/github.svg);
 }

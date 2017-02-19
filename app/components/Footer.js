@@ -6,7 +6,6 @@ const Footer = () => {
     return (
       <div className={`${styles.wrapper} pure-u-1-4`} key={i}>
         <a target="_blank" href={linkUrl}>
-          <img src={imgUrl}/>
         </a>
       </div>
     )
