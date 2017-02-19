@@ -39,7 +39,7 @@
   src: url('../public/fonts/shorelines-script-bold.otf') format('opentype');
   }
 
-body, p {
+body, p, h1, h2, h3, a, span {
   font-family: "BrandonGrotesque";
 }
 

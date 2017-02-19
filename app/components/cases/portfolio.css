@@ -1,6 +1,7 @@
 .portfolio {
   margin: 0 auto;
-  width: 575px;
+  max-width: 575px;
+  padding: 0 15px;
 }
 
 .portfolio h1 {
