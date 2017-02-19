@@ -7,7 +7,9 @@ import { urlPaths } from '../config'
 const Work = () => {
   const Case = ({img, title, text}, i) => {
     const isWide = i === 0 || i === 3
-    const pureClasses = isWide ? 'pure-u-md-3-5' : 'pure-u-md-2-5'
+    const pureClasses = isWide ?
+      'pure-u-lg-13-24 pure-u-xl-3-5' :
+      'pure-u-lg-11-24 pure-u-xl-2-5'
     const bgColor = isWide ? styles.lightBg : styles.darkBg
     return (
       <div className={`
