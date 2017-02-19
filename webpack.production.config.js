@@ -20,7 +20,8 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: 'app/index.tpl.html',
       inject: 'body',
-      filename: 'index.html'
+      filename: 'index.html',
+      favicon: 'public/images/favicon.png',
     }),
     new ExtractTextPlugin('[name]-[hash].min.css'),
     new webpack.optimize.UglifyJsPlugin({
