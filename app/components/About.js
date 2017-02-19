@@ -17,7 +17,11 @@ const About = ({strings}) => {
             <p className={styles.aboutme}>{strings.intro.text1}</p>
             <p className={styles.aboutme}>{strings.intro.text2}</p>
             <p className={styles.aboutme}>{strings.intro.text3}</p>
-            <button>DOWNLOAD MY RESUME</button>
+            <div className={styles.downloadBtnWrapper}>
+              <a className={styles.downloadBtn} href={require(`../../public/resume.pdf`)}>
+                DOWNLOAD MY RESUME
+              </a>
+            </div>
           </div>
         </div>
       </div>
