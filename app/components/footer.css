@@ -20,37 +20,37 @@
   background-image: url(../../public/images/linkedin.svg);
 }
 
-.footer div:nth-child(1) a:hover {
+/*.footer div:nth-child(1) a:hover {
   background-repeat: no-repeat;
   background-image: url(../../public/images/linkedin-hover.svg);
-}
+}*/
 
 .footer div:nth-child(2) a {
   background-repeat: no-repeat;
   background-image: url(../../public/images/behance.svg);
 }
 
-.footer div:nth-child(2) a:hover {
+/*.footer div:nth-child(2) a:hover {
   background-repeat: no-repeat;
   background-image: url(../../public/images/behance-hover.svg);
-}
+}*/
 
 .footer div:nth-child(3) a {
   background-repeat: no-repeat;
   background-image: url(../../public/images/twitter.svg);
 }
 
-.footer div:nth-child(3) a:hover {
+/*.footer div:nth-child(3) a:hover {
   background-repeat: no-repeat;
   background-image: url(../../public/images/twitter-hover.svg);
-}
+}*/
 
 .footer div:nth-child(4) a {
   background-repeat: no-repeat;
   background-image: url(../../public/images/github.svg);
 }
 
-.footer div:nth-child(4) a:hover {
+/*.footer div:nth-child(4) a:hover {
   background-repeat: no-repeat;
   background-image: url(../../public/images/github-hover.svg);
-}
+}*/
