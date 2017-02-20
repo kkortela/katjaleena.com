@@ -26,14 +26,14 @@ const Instashop = () => {
           <p>{strings.instashop.intro.intro4.text}</p>
         </div>
         <div className={`pure-g ${styles.processmain}`}>
-          <div className={`pure-u-1 pure-u-lg-1-4 pure-u-md-1-2 ${styles.process}`}>
+          <div className={`pure-u-1 pure-u-lg-1-2 pure-u-md-1-2 ${styles.process}`}>
             <img className={`${styles.icon}`} src={require(`../../../public/images/research-icon.svg`)} />
             <span>{strings.instashop.processsteps.step1.subtitle}</span>
             <p>{strings.instashop.processsteps.step1.text1}</p>
             <p>{strings.instashop.processsteps.step1.text2}</p>
             <p>{strings.instashop.processsteps.step1.text3}</p>
           </div>
-          <div className={`pure-u-1 pure-u-lg-1-4 pure-u-md-1-2 ${styles.process}`}>
+          <div className={`pure-u-1 pure-u-lg-1-2 pure-u-md-1-2 ${styles.process}`}>
             <img className={`${styles.icon}`} src={require(`../../../public/images/strategy-icon.svg`)} />
             <span>{strings.instashop.processsteps.step2.subtitle}</span>
             <p>{strings.instashop.processsteps.step2.text1}</p>
@@ -45,7 +45,7 @@ const Instashop = () => {
             <p>{strings.instashop.processsteps.step2.text7}</p>
             <p>{strings.instashop.processsteps.step2.text8}</p>
           </div>
-          <div className={`pure-u-1 pure-u-lg-1-4 pure-u-md-1-2 ${styles.process}`}>
+          <div className={`pure-u-1 pure-u-lg-1-2 pure-u-md-1-2 ${styles.process}`}>
             <img className={`${styles.icon}`} src={require(`../../../public/images/ixd-icon.svg`)} />
             <span>{strings.instashop.processsteps.step3.subtitle}</span>
             <p>{strings.instashop.processsteps.step3.text1}</p>
@@ -53,7 +53,7 @@ const Instashop = () => {
             <p>{strings.instashop.processsteps.step3.text3}</p>
             <p>{strings.instashop.processsteps.step3.text4}</p>
           </div>
-          <div className={`pure-u-1 pure-u-lg-1-4 pure-u-md-1-2 ${styles.process}`}>
+          <div className={`pure-u-1 pure-u-lg-1-2 pure-u-md-1-2 ${styles.process}`}>
             <img className={`${styles.icon}`} src={require(`../../../public/images/ui-icon.svg`)} />
             <span>{strings.instashop.processsteps.step4.subtitle}</span>
             <p>{strings.instashop.processsteps.step4.text1}</p>
