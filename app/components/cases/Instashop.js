@@ -8,7 +8,7 @@ const Instashop = () => {
   return (
     <CaseWrapper nextPage={3}>
       <h1>{strings.instashop.title}</h1>
-      <img className={`${styles.cover}`} src={require(`../../../public/images/instashop-cover.png`)} />
+      <img className={`${styles.cover}`} src={require(`../../../public/images/instashop-cover.jpg`)} />
         <div className={`${styles.intro}`}>
           <span>{strings.instashop.intro.intro1.subtitle}</span>
           <p>{strings.instashop.intro.intro1.text}</p>
@@ -92,7 +92,7 @@ const Instashop = () => {
       <p>{strings.instashop.process.uidesign.text1}</p>
       <img src={require(`../../../public/images/instashop-uikit.png`)} />
       <p>{strings.instashop.process.uidesign.text2}</p>
-      <img className={`${styles.cover}`} src={require(`../../../public/images/instashop-cover.png`)} />
+      <img className={`${styles.cover}`} src={require(`../../../public/images/instashop-cover.jpg`)} />
       <h2>{strings.instashop.process.reflection.title}</h2>
       <p>{strings.instashop.process.reflection.text1}</p>
       <p>{strings.instashop.process.reflection.text2}</p>
