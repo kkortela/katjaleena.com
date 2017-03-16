@@ -18,7 +18,7 @@ const About = ({strings}) => {
             <p className={styles.aboutme}>{strings.intro.text2}</p>
             <p className={styles.aboutme}>{strings.intro.text3}</p>
             <div className={styles.downloadBtnWrapper}>
-              <a className={styles.downloadBtn} href={require(`../../public/resume.pdf`)}>
+              <a target="_blank" className={styles.downloadBtn} href={require(`../../public/resume.pdf`)}>
                 DOWNLOAD MY RESUME
               </a>
             </div>
