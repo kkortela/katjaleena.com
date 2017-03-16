@@ -6,7 +6,7 @@ import CaseWrapper from './CaseWrapper'
 
 const DignityMeals = () => {
   return (
-    <CaseWrapper nextPage={2}>
+    <CaseWrapper nextPage={3}>
       <h1>{strings.dignitymeals.title}</h1>
       <img className={`${styles.cover}`} src={require(`../../../public/images/dignitymeals-cover.jpg`)} />
         <div className={`${styles.intro}`}>

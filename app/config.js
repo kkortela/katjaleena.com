@@ -7,8 +7,8 @@ export const urlPaths = {
     about: 'about',
     cases: [
       'amma',
-      'dignity-meals',
       'instashop',
+      'dignity-meals',
       'wedding-website'
     ]
 }
@@ -20,14 +20,14 @@ export const images = [
     text: amma.text,
   },
   {
-    img: require(`../public/images/dignity-meals.png`),
-    title: dignity.title,
-    text: dignity.text,
-  },
-  {
     img: require(`../public/images/instashop.png`),
     title: instashop.title,
     text: instashop.text,
+  },
+  {
+    img: require(`../public/images/dignity-meals.png`),
+    title: dignity.title,
+    text: dignity.text,
   },
   {
     img: require(`../public/images/wedding.png`),

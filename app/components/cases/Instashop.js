@@ -6,7 +6,7 @@ import CaseWrapper from './CaseWrapper'
 
 const Instashop = () => {
   return (
-    <CaseWrapper nextPage={3}>
+    <CaseWrapper nextPage={2}>
       <h1>{strings.instashop.title}</h1>
       <img className={`${styles.cover}`} src={require(`../../../public/images/instashop-cover.jpg`)} />
         <div className={`${styles.intro}`}>
