@@ -1,14 +1,13 @@
 .intro {
-  margin: 140px 80px 0 0;
+  margin: 180px 0 0 80px;
   color: white;
   text-align: center;
   padding: 0 5%;
   width: 561px;
-  float: right;
+  float: left;
 }
 
 .intro h1 {
-  font-family: 'ShorelinesScript';
   font-weight: 100;
   font-size: 42px;
   margin: 0;
