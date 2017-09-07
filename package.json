@@ -1,4 +1,8 @@
 {
+  "engines": {
+    "node": "8.4.0",
+    "npm": "5.3.0"
+  },
   "scripts": {
     "start": "webpack-dev-server --hot --inline",
     "build": "rimraf dist && webpack && mv dist/*.otf dist/static/css/",
