@@ -1,0 +1,23 @@
+var _moarwick$elm_webpack_starter$Components_Portfolio_NextBtn$nextBtn = function (url) {
+	var _p0 = url;
+	if (_p0.ctor === 'Nothing') {
+		return _elm_lang$html$Html$text('');
+	} else {
+		return A2(
+			_elm_lang$html$Html$a,
+			{
+				ctor: '::',
+				_0: _elm_lang$html$Html_Attributes$class('link'),
+				_1: {
+					ctor: '::',
+					_0: _elm_lang$html$Html_Attributes$href(_p0._0),
+					_1: {ctor: '[]'}
+				}
+			},
+			{
+				ctor: '::',
+				_0: _elm_lang$html$Html$text('Next'),
+				_1: {ctor: '[]'}
+			});
+	}
+};

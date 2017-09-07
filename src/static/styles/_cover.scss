@@ -1,0 +1,14 @@
+.cover {
+    height: 550px;
+    background: url(../img/cover.jpg) no-repeat center center;
+    background-size: cover;
+}
+
+@media screen and (max-width: 1024px) {
+    .cover {
+        height: 300px;
+        background: url(../img/cover-sm.jpg) no-repeat center center;
+        background-size: contain;
+        margin-bottom: -30px;
+    }
+}

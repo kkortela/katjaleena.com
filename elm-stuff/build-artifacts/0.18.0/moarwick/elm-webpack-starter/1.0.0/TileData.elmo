@@ -1,0 +1,28 @@
+var _moarwick$elm_webpack_starter$TileData$weddingData = {
+	url: 'wedding-website',
+	imgSrc: A2(_elm_lang$core$Basics_ops['++'], _moarwick$elm_webpack_starter$Config$imgPath, 'wedding.png'),
+	title: 'Wedding website',
+	desc: 'Responsive wedding website'
+};
+var _moarwick$elm_webpack_starter$TileData$dignityMealsData = {
+	url: 'dignity-meals',
+	imgSrc: A2(_elm_lang$core$Basics_ops['++'], _moarwick$elm_webpack_starter$Config$imgPath, 'dignitymeals.png'),
+	title: 'Dignity Meals',
+	desc: 'Mobile app for connecting food donors with charities'
+};
+var _moarwick$elm_webpack_starter$TileData$instashopData = {
+	url: 'instashop',
+	imgSrc: A2(_elm_lang$core$Basics_ops['++'], _moarwick$elm_webpack_starter$Config$imgPath, 'instashop.png'),
+	title: 'Instashop',
+	desc: 'Responsive online grocery store websites'
+};
+var _moarwick$elm_webpack_starter$TileData$ammaData = {
+	url: 'amma',
+	imgSrc: A2(_elm_lang$core$Basics_ops['++'], _moarwick$elm_webpack_starter$Config$imgPath, 'amma.png'),
+	title: 'Amma',
+	desc: 'Case project for building an app for asthma tracking'
+};
+var _moarwick$elm_webpack_starter$TileData$TileData = F4(
+	function (a, b, c, d) {
+		return {url: a, imgSrc: b, title: c, desc: d};
+	});

@@ -1,0 +1,547 @@
+var _moarwick$elm_webpack_starter$Components_Portfolio_Amma$portfolioItem = {
+	ctor: '::',
+	_0: A2(
+		_elm_lang$html$Html$h1,
+		{ctor: '[]'},
+		{
+			ctor: '::',
+			_0: _elm_lang$html$Html$text('Amma'),
+			_1: {ctor: '[]'}
+		}),
+	_1: {
+		ctor: '::',
+		_0: A2(
+			_elm_lang$html$Html$img,
+			{
+				ctor: '::',
+				_0: _elm_lang$html$Html_Attributes$class('portfolio-cover'),
+				_1: {
+					ctor: '::',
+					_0: _elm_lang$html$Html_Attributes$src(
+						A2(_elm_lang$core$Basics_ops['++'], _moarwick$elm_webpack_starter$Config$imgPath, 'amma-cover.jpg')),
+					_1: {ctor: '[]'}
+				}
+			},
+			{ctor: '[]'}),
+		_1: {
+			ctor: '::',
+			_0: A2(_moarwick$elm_webpack_starter$Components_Portfolio_Intro$introText, 'Project:', 'Asthma Management and Monitoring App'),
+			_1: {
+				ctor: '::',
+				_0: A2(_moarwick$elm_webpack_starter$Components_Portfolio_Intro$introText, 'Target user:', 'Adult asthmatics, who want to track their asthma'),
+				_1: {
+					ctor: '::',
+					_0: A2(_moarwick$elm_webpack_starter$Components_Portfolio_Intro$introText, 'Goal:', 'To help the asthmatics to understand the relation of the triggers and symptoms and to manage their asthma by creating action plans'),
+					_1: {
+						ctor: '::',
+						_0: A2(_moarwick$elm_webpack_starter$Components_Portfolio_Intro$introText, 'My Role:', 'UX and Visual Designer'),
+						_1: {
+							ctor: '::',
+							_0: A2(
+								_elm_lang$html$Html$div,
+								{
+									ctor: '::',
+									_0: _elm_lang$html$Html_Attributes$class('processmain'),
+									_1: {ctor: '[]'}
+								},
+								{
+									ctor: '::',
+									_0: A3(
+										_moarwick$elm_webpack_starter$Components_Portfolio_Intro$processSteps,
+										'research-icon',
+										'Research',
+										{
+											ctor: '::',
+											_0: 'UX Strategy Blueprint',
+											_1: {
+												ctor: '::',
+												_0: 'Personas',
+												_1: {
+													ctor: '::',
+													_0: 'Feature Matrix',
+													_1: {
+														ctor: '::',
+														_0: 'User Flows',
+														_1: {ctor: '[]'}
+													}
+												}
+											}
+										}),
+									_1: {
+										ctor: '::',
+										_0: A3(
+											_moarwick$elm_webpack_starter$Components_Portfolio_Intro$processSteps,
+											'strategy-icon',
+											'Strategy',
+											{
+												ctor: '::',
+												_0: 'Market Research',
+												_1: {
+													ctor: '::',
+													_0: 'Secondary Research',
+													_1: {
+														ctor: '::',
+														_0: 'Interviews',
+														_1: {ctor: '[]'}
+													}
+												}
+											}),
+										_1: {
+											ctor: '::',
+											_0: A3(
+												_moarwick$elm_webpack_starter$Components_Portfolio_Intro$processSteps,
+												'ixd-icon',
+												'Interaction Design',
+												{
+													ctor: '::',
+													_0: 'Wireframes',
+													_1: {
+														ctor: '::',
+														_0: 'Prototype',
+														_1: {
+															ctor: '::',
+															_0: 'Usability Testing',
+															_1: {ctor: '[]'}
+														}
+													}
+												}),
+											_1: {
+												ctor: '::',
+												_0: A3(
+													_moarwick$elm_webpack_starter$Components_Portfolio_Intro$processSteps,
+													'ui-icon',
+													'Strategy',
+													{
+														ctor: '::',
+														_0: 'UI Design',
+														_1: {
+															ctor: '::',
+															_0: 'Style Guide',
+															_1: {
+																ctor: '::',
+																_0: 'Logo Design',
+																_1: {
+																	ctor: '::',
+																	_0: 'Key Screen Templates',
+																	_1: {ctor: '[]'}
+																}
+															}
+														}
+													}),
+												_1: {ctor: '[]'}
+											}
+										}
+									}
+								}),
+							_1: {
+								ctor: '::',
+								_0: A2(
+									_elm_lang$html$Html$h2,
+									{ctor: '[]'},
+									{
+										ctor: '::',
+										_0: _elm_lang$html$Html$text('Summary'),
+										_1: {ctor: '[]'}
+									}),
+								_1: {
+									ctor: '::',
+									_0: A2(
+										_elm_lang$html$Html$p,
+										{ctor: '[]'},
+										{
+											ctor: '::',
+											_0: _elm_lang$html$Html$text('This was a capstone project made in collaboration with Designlab and Google Healthcare Initiative (GHI).'),
+											_1: {ctor: '[]'}
+										}),
+									_1: {
+										ctor: '::',
+										_0: A2(
+											_elm_lang$html$Html$p,
+											{ctor: '[]'},
+											{
+												ctor: '::',
+												_0: _elm_lang$html$Html$text('The challenge here was to really understand the asthmatics and their condition, and how they manage asthma. My research showed that the adult asthmatics have their condition controlled, but they would like to be notified of their medication, to measure their peak flows, and to monitor what affects and causes their worsening symptoms. Using this insight, I made it possible for the asthmatics to effortlessly create action plans, keep track of their peak flow and vitals, and be aware of the triggers.'),
+												_1: {ctor: '[]'}
+											}),
+										_1: {
+											ctor: '::',
+											_0: A2(
+												_elm_lang$html$Html$h2,
+												{ctor: '[]'},
+												{
+													ctor: '::',
+													_0: _elm_lang$html$Html$text('Process'),
+													_1: {ctor: '[]'}
+												}),
+											_1: {
+												ctor: '::',
+												_0: A2(
+													_elm_lang$html$Html$h3,
+													{ctor: '[]'},
+													{
+														ctor: '::',
+														_0: _elm_lang$html$Html$text('Research'),
+														_1: {ctor: '[]'}
+													}),
+												_1: {
+													ctor: '::',
+													_0: A2(
+														_elm_lang$html$Html$p,
+														{ctor: '[]'},
+														{
+															ctor: '::',
+															_0: _elm_lang$html$Html$text('I wanted to gain understanding of the situation of asthma in Finland, who suffer from it, and what methods for asthma management are on the market. Based on the findings I prepared an interview for adult asthmatics to understand their daily life. I learned that people have various types of asthma that needs different kind of attention, but still with modern medicine, the symptoms are well under control. This meant that adult asthmatics don’t have an urgent need for asthma management method. However, I found out that they would be interested to track their symptoms, get reminders for taking medicine and measure their peak flow, and see how different factors (weather, exercise) affect their condition.'),
+															_1: {ctor: '[]'}
+														}),
+													_1: {
+														ctor: '::',
+														_0: A2(
+															_elm_lang$html$Html$h3,
+															{ctor: '[]'},
+															{
+																ctor: '::',
+																_0: _elm_lang$html$Html$text('Strategy'),
+																_1: {ctor: '[]'}
+															}),
+														_1: {
+															ctor: '::',
+															_0: A2(
+																_elm_lang$html$Html$img,
+																{
+																	ctor: '::',
+																	_0: _elm_lang$html$Html_Attributes$src(
+																		A2(_elm_lang$core$Basics_ops['++'], _moarwick$elm_webpack_starter$Config$imgPath, 'amma-persona.png')),
+																	_1: {ctor: '[]'}
+																},
+																{ctor: '[]'}),
+															_1: {
+																ctor: '::',
+																_0: A2(
+																	_elm_lang$html$Html$p,
+																	{
+																		ctor: '::',
+																		_0: _elm_lang$html$Html_Attributes$class('caption'),
+																		_1: {ctor: '[]'}
+																	},
+																	{
+																		ctor: '::',
+																		_0: _elm_lang$html$Html$text('Provisional persona based on the interview data'),
+																		_1: {ctor: '[]'}
+																	}),
+																_1: {
+																	ctor: '::',
+																	_0: A2(
+																		_elm_lang$html$Html$p,
+																		{ctor: '[]'},
+																		{
+																			ctor: '::',
+																			_0: _elm_lang$html$Html$text('I created a provisional persona based on the interviewees’ answers. The persona is an active adult, Laura, who has exercise induced asthma, but is very active. She likes to understand her condition better, and see how her exercise affects her symptoms and vice versa.'),
+																			_1: {ctor: '[]'}
+																		}),
+																	_1: {
+																		ctor: '::',
+																		_0: A2(
+																			_elm_lang$html$Html$p,
+																			{ctor: '[]'},
+																			{
+																				ctor: '::',
+																				_0: _elm_lang$html$Html$text('From the needs of the provisional persona I mapped user flows for onboarding and creating an action plan.'),
+																				_1: {ctor: '[]'}
+																			}),
+																		_1: {
+																			ctor: '::',
+																			_0: A2(
+																				_elm_lang$html$Html$img,
+																				{
+																					ctor: '::',
+																					_0: _elm_lang$html$Html_Attributes$src(
+																						A2(_elm_lang$core$Basics_ops['++'], _moarwick$elm_webpack_starter$Config$imgPath, 'amma-userflows.png')),
+																					_1: {ctor: '[]'}
+																				},
+																				{ctor: '[]'}),
+																			_1: {
+																				ctor: '::',
+																				_0: A2(
+																					_elm_lang$html$Html$p,
+																					{
+																						ctor: '::',
+																						_0: _elm_lang$html$Html_Attributes$class('caption'),
+																						_1: {ctor: '[]'}
+																					},
+																					{
+																						ctor: '::',
+																						_0: _elm_lang$html$Html$text('User flows for onboarding and creating an action plan'),
+																						_1: {ctor: '[]'}
+																					}),
+																				_1: {
+																					ctor: '::',
+																					_0: A2(
+																						_elm_lang$html$Html$h3,
+																						{ctor: '[]'},
+																						{
+																							ctor: '::',
+																							_0: _elm_lang$html$Html$text('Interaction Design'),
+																							_1: {ctor: '[]'}
+																						}),
+																					_1: {
+																						ctor: '::',
+																						_0: A2(
+																							_elm_lang$html$Html$p,
+																							{ctor: '[]'},
+																							{
+																								ctor: '::',
+																								_0: _elm_lang$html$Html$text('Using the user flows as a basis, I first sketched few ideas for the wireframes, and created them with Sketch. Since this was a project for Google, I wanted to apply material design to my designs. '),
+																								_1: {ctor: '[]'}
+																							}),
+																						_1: {
+																							ctor: '::',
+																							_0: A2(
+																								_elm_lang$html$Html$img,
+																								{
+																									ctor: '::',
+																									_0: _elm_lang$html$Html_Attributes$src(
+																										A2(_elm_lang$core$Basics_ops['++'], _moarwick$elm_webpack_starter$Config$imgPath, 'amma-sketches.png')),
+																									_1: {ctor: '[]'}
+																								},
+																								{ctor: '[]'}),
+																							_1: {
+																								ctor: '::',
+																								_0: A2(
+																									_elm_lang$html$Html$p,
+																									{
+																										ctor: '::',
+																										_0: _elm_lang$html$Html_Attributes$class('caption'),
+																										_1: {ctor: '[]'}
+																									},
+																									{
+																										ctor: '::',
+																										_0: _elm_lang$html$Html$text('Sketches of my AMMA wireframes'),
+																										_1: {ctor: '[]'}
+																									}),
+																								_1: {
+																									ctor: '::',
+																									_0: A2(
+																										_elm_lang$html$Html$img,
+																										{
+																											ctor: '::',
+																											_0: _elm_lang$html$Html_Attributes$src(
+																												A2(_elm_lang$core$Basics_ops['++'], _moarwick$elm_webpack_starter$Config$imgPath, 'amma-sketches.jpg')),
+																											_1: {ctor: '[]'}
+																										},
+																										{ctor: '[]'}),
+																									_1: {
+																										ctor: '::',
+																										_0: A2(
+																											_elm_lang$html$Html$p,
+																											{
+																												ctor: '::',
+																												_0: _elm_lang$html$Html_Attributes$class('caption'),
+																												_1: {ctor: '[]'}
+																											},
+																											{
+																												ctor: '::',
+																												_0: _elm_lang$html$Html$text('Wireframe screens of sign up, welcome screen, creating action plan, morning report, dashboard, and peak flow data.'),
+																												_1: {ctor: '[]'}
+																											}),
+																										_1: {
+																											ctor: '::',
+																											_0: A2(
+																												_elm_lang$html$Html$img,
+																												{
+																													ctor: '::',
+																													_0: _elm_lang$html$Html_Attributes$class('noshadow'),
+																													_1: {
+																														ctor: '::',
+																														_0: _elm_lang$html$Html_Attributes$src(
+																															A2(_elm_lang$core$Basics_ops['++'], _moarwick$elm_webpack_starter$Config$imgPath, 'amma-wireframes.png')),
+																														_1: {ctor: '[]'}
+																													}
+																												},
+																												{ctor: '[]'}),
+																											_1: {
+																												ctor: '::',
+																												_0: A2(
+																													_elm_lang$html$Html$p,
+																													{
+																														ctor: '::',
+																														_0: _elm_lang$html$Html_Attributes$class('caption'),
+																														_1: {ctor: '[]'}
+																													},
+																													{
+																														ctor: '::',
+																														_0: _elm_lang$html$Html$text('Wireframe screens of sign up, welcome screen, creating action plan, morning report, dashboard, and peak flow data.'),
+																														_1: {ctor: '[]'}
+																													}),
+																												_1: {
+																													ctor: '::',
+																													_0: A2(
+																														_elm_lang$html$Html$p,
+																														{
+																															ctor: '::',
+																															_0: _elm_lang$html$Html_Attributes$class('inline'),
+																															_1: {ctor: '[]'}
+																														},
+																														{
+																															ctor: '::',
+																															_0: _elm_lang$html$Html$text('I used these wireframes to create a'),
+																															_1: {ctor: '[]'}
+																														}),
+																													_1: {
+																														ctor: '::',
+																														_0: A2(
+																															_elm_lang$html$Html$a,
+																															{
+																																ctor: '::',
+																																_0: _elm_lang$html$Html_Attributes$target('_blank'),
+																																_1: {
+																																	ctor: '::',
+																																	_0: _elm_lang$html$Html_Attributes$href('https://marvelapp.com/2jab69j/screen/24607525'),
+																																	_1: {ctor: '[]'}
+																																}
+																															},
+																															{
+																																ctor: '::',
+																																_0: _elm_lang$html$Html$text('prototype in Marvel'),
+																																_1: {ctor: '[]'}
+																															}),
+																														_1: {
+																															ctor: '::',
+																															_0: A2(
+																																_elm_lang$html$Html$p,
+																																{
+																																	ctor: '::',
+																																	_0: _elm_lang$html$Html_Attributes$class('inline'),
+																																	_1: {ctor: '[]'}
+																																},
+																																{
+																																	ctor: '::',
+																																	_0: _elm_lang$html$Html$text('for usability testing. I conducted remote usability tests and online click tests in Usability Hub. The tasks for the usability tests were to sign up to the app as a new user, create an action plan and follow the morning’s action plan. The goal was to find out the fluency of the tasks and where the errors occurred. '),
+																																	_1: {ctor: '[]'}
+																																}),
+																															_1: {
+																																ctor: '::',
+																																_0: A2(
+																																	_elm_lang$html$Html$h3,
+																																	{ctor: '[]'},
+																																	{
+																																		ctor: '::',
+																																		_0: _elm_lang$html$Html$text('User Interface Design'),
+																																		_1: {ctor: '[]'}
+																																	}),
+																																_1: {
+																																	ctor: '::',
+																																	_0: A2(
+																																		_elm_lang$html$Html$p,
+																																		{ctor: '[]'},
+																																		{
+																																			ctor: '::',
+																																			_0: _elm_lang$html$Html$text('To reflect the brand of AMMA I created a logo and brand style tile to reflect their values. The idea of AMMA was to be a modern, lifestyle health app that gives a fresh and vibrant feeling to its users.'),
+																																			_1: {ctor: '[]'}
+																																		}),
+																																	_1: {
+																																		ctor: '::',
+																																		_0: A2(
+																																			_elm_lang$html$Html$img,
+																																			{
+																																				ctor: '::',
+																																				_0: _elm_lang$html$Html_Attributes$src(
+																																					A2(_elm_lang$core$Basics_ops['++'], _moarwick$elm_webpack_starter$Config$imgPath, 'amma-styleguide.png')),
+																																				_1: {ctor: '[]'}
+																																			},
+																																			{ctor: '[]'}),
+																																		_1: {
+																																			ctor: '::',
+																																			_0: A2(
+																																				_elm_lang$html$Html$p,
+																																				{ctor: '[]'},
+																																				{
+																																					ctor: '::',
+																																					_0: _elm_lang$html$Html$text('The final solution came effortlessly to me, since I had gained a clear vision of what asthmatics would want from the app. It should feel more like a lifestyle health app than a medical app, beacuse the asthmatics didn’t want to be defined or controlled by asthma. '),
+																																					_1: {ctor: '[]'}
+																																				}),
+																																			_1: {
+																																				ctor: '::',
+																																				_0: A2(
+																																					_elm_lang$html$Html$img,
+																																					{
+																																						ctor: '::',
+																																						_0: _elm_lang$html$Html_Attributes$src(
+																																							A2(_elm_lang$core$Basics_ops['++'], _moarwick$elm_webpack_starter$Config$imgPath, 'amma-keyscreens.png')),
+																																						_1: {ctor: '[]'}
+																																					},
+																																					{ctor: '[]'}),
+																																				_1: {
+																																					ctor: '::',
+																																					_0: A2(
+																																						_elm_lang$html$Html$h2,
+																																						{ctor: '[]'},
+																																						{
+																																							ctor: '::',
+																																							_0: _elm_lang$html$Html$text('Reflection'),
+																																							_1: {ctor: '[]'}
+																																						}),
+																																					_1: {
+																																						ctor: '::',
+																																						_0: A2(
+																																							_elm_lang$html$Html$p,
+																																							{ctor: '[]'},
+																																							{
+																																								ctor: '::',
+																																								_0: _elm_lang$html$Html$text('Since I’m not an asthmatic myself, this project really taught me the importance of understanding the user. The asthmatics I interviewed for AMMA had their condition pretty much under control, and didn’t seem to need any management method. But since people naturally are interested of collecting information about themselves and get a better understanding of their condition, I think they would find using AMMA helpful. Or I could’ve done the interviews with another target group who would benefit more of managing their asthma with this app.'),
+																																								_1: {ctor: '[]'}
+																																							}),
+																																						_1: {
+																																							ctor: '::',
+																																							_0: A2(
+																																								_elm_lang$html$Html$p,
+																																								{ctor: '[]'},
+																																								{
+																																									ctor: '::',
+																																									_0: _elm_lang$html$Html$text('I pushed myself to create a conversational, effortless and aesthetic solution to help engage the person to return repeatedly to the app. I also learned the use material design guidelines for designing AMMA.'),
+																																									_1: {ctor: '[]'}
+																																								}),
+																																							_1: {ctor: '[]'}
+																																						}
+																																					}
+																																				}
+																																			}
+																																		}
+																																	}
+																																}
+																															}
+																														}
+																													}
+																												}
+																											}
+																										}
+																									}
+																								}
+																							}
+																						}
+																					}
+																				}
+																			}
+																		}
+																	}
+																}
+															}
+														}
+													}
+												}
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+};
+var _moarwick$elm_webpack_starter$Components_Portfolio_Amma$amma = A3(
+	_moarwick$elm_webpack_starter$Components_Portfolio_Wrapper$wrapper,
+	_elm_lang$core$Maybe$Just(_moarwick$elm_webpack_starter$TileData$instashopData.url),
+	_moarwick$elm_webpack_starter$Components_Portfolio_Amma$portfolioItem,
+	true);

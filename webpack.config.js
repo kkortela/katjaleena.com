@@ -1,62 +1,141 @@
-'use strict'
-
 const path = require('path')
 const webpack = require('webpack')
+const merge = require('webpack-merge')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
+const autoprefixer = require('autoprefixer')
+const ExtractTextPlugin = require('extract-text-webpack-plugin')
+const CopyWebpackPlugin = require('copy-webpack-plugin')
 
-module.exports = {
-  devtool: 'eval-source-map',
-  entry: [
-    'webpack-hot-middleware/client?reload=true',
-    path.join(__dirname, 'app/main.js')
-  ],
-  output: {
-    path: path.join(__dirname, '/dist/'),
-    filename: '[name].js',
-    publicPath: path.join(__dirname, '/public/'),
-  },
-  plugins: [
-    new HtmlWebpackPlugin({
-      template: 'app/index.tpl.html',
-      inject: 'body',
-      filename: 'index.html'
-    }),
-    new webpack.optimize.OccurrenceOrderPlugin(),
-    new webpack.HotModuleReplacementPlugin(),
-    new webpack.NoErrorsPlugin(),
-    new webpack.DefinePlugin({
-      'process.env.NODE_ENV': JSON.stringify('development')
+
+const prod = 'production'
+const dev = 'development'
+
+// determine build env
+const TARGET_ENV = process.env.npm_lifecycle_event === 'build' ? prod : dev
+const isDev = TARGET_ENV == dev
+const isProd = TARGET_ENV == prod
+
+// entry and output path/filename variables
+const entryPath = path.join(__dirname, 'src/static/index.js')
+const outputPath = path.join(__dirname, 'dist')
+const outputFilename = isProd ? '[name]-[hash].js' : '[name].js'
+
+console.log('WEBPACK GO! Building for ' + TARGET_ENV)
+
+// common webpack config (valid for dev and prod)
+var commonConfig = {
+    output: {
+        path: outputPath,
+        filename: `static/js/${outputFilename}`,
+    },
+    resolve: {
+        extensions: ['.js', '.elm'],
+        modules: ['node_modules']
+    },
+    module: {
+        noParse: /\.elm$/,
+        rules: [{
+            test: /\.(eot|ttf|woff|woff2|svg)$/,
+            use: 'file-loader?publicPath=../../&name=static/css/[hash].[ext]'
+        },{
+            test: /\.otf$/,
+            loader: 'url-loader?limit=10240&mimetype=application/x-font-opentype'
+        },{
+            test: /\.jpg$/,
+            loader: "url-loader?limit=100000&mimetype=image/jpg"
+        },{
+            test: /\.pdf$/,
+            loader: "url-loader?limit=1000000000&mimetype=application/pdf"
+        }]
+    },
+    plugins: [
+        new webpack.LoaderOptionsPlugin({
+            options: {
+                postcss: [autoprefixer()]
+            }
+        }),
+        new HtmlWebpackPlugin({
+            template: 'src/static/index.html',
+            inject: 'body',
+            filename: 'index.html',
+        })
+    ]
+}
+
+// additional webpack settings for local env (when invoked by 'npm start')
+if (isDev === true) {
+    module.exports = merge(commonConfig, {
+        entry: [
+            'webpack-dev-server/client?http://localhost:8080',
+            entryPath
+        ],
+        devServer: {
+            // serve index.html in place of 404 responses
+            historyApiFallback: true,
+            contentBase: './src',
+            hot: true
+        },
+        module: {
+            rules: [{
+                test: /\.elm$/,
+                exclude: [/elm-stuff/, /node_modules/],
+                use: [{
+                    loader: 'elm-webpack-loader',
+                    options: {
+                        verbose: true,
+                        warn: true,
+                        debug: true,
+                    }
+                }]
+            },{
+                test: /\.sc?ss$/,
+                use: ['style-loader', 'css-loader', 'postcss-loader', 'sass-loader']
+            }]
+        }
     })
-  ],
-  module: {
-    loaders: [{
-      test: /\.jsx?$/,
-      exclude: /node_modules/,
-      loader: 'babel-loader',
-      query: {
-        "presets": ["react", "es2015", "stage-0", "react-hmre"]
-      }
-    }, {
-      test: /\.json?$/,
-      loader: 'json'
-    }, {
-      test: /\.css$/,
-      loader: 'style-loader!css-loader?modules&localIdentName=[name]---[local]---[hash:base64:5]'
-    }, {
-      test: /\.otf$/,
-      loader: 'url-loader?limit=10240&mimetype=application/x-font-opentype'
-    }, {
-      test: /\.jpg$/,
-      loader: "url-loader?limit=10000&mimetype=image/jpg"
-    }, {
-      test: /\.png$/,
-      loader: "url-loader?limit=10000&mimetype=image/png"
-    }, {
-      test: /\.pdf$/,
-      loader: "url-loader?limit=1&mimetype=application/pdf"
-    }, {
-      test: /\.svg$/,
-      loader: "svg-url-loader?limit=1024&mimetype=image/svg"
-    }]
-  }
+}
+
+// additional webpack settings for prod env (when invoked via 'npm run build')
+if (isProd === true) {
+    module.exports = merge(commonConfig, {
+        entry: entryPath,
+        module: {
+            rules: [{
+                test: /\.elm$/,
+                exclude: [/elm-stuff/, /node_modules/],
+                use: 'elm-webpack-loader'
+            }, {
+                test: /\.sc?ss$/,
+                use: ExtractTextPlugin.extract({
+                    fallback: 'style-loader',
+                    use: ['css-loader', 'postcss-loader', 'sass-loader']
+                })
+            }]
+        },
+        plugins: [
+            new ExtractTextPlugin({
+                filename: 'static/css/[name]-[hash].css',
+                allChunks: true,
+            }),
+            new CopyWebpackPlugin([{
+                from: 'src/static/img/',
+                to: 'static/img/'
+            }, {
+                from: 'src/static/resume.pdf',
+                to: 'static/'
+            },{
+                from: 'src/favicon.ico'
+            }]),
+
+            // extract CSS into a separate file
+            // minify & mangle JS/CSS
+            new webpack.optimize.UglifyJsPlugin({
+                minimize: true,
+                compressor: {
+                    warnings: false
+                }
+                // mangle:  true
+            })
+        ]
+    })
 }

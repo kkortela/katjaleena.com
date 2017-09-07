@@ -1,0 +1,192 @@
+var _moarwick$elm_webpack_starter$Components_Home$introText = 'I’m Katja, a UX/UI designer, who designs for a reason and wants to improve people’s lives.';
+var _moarwick$elm_webpack_starter$Components_Home$welcomeText = 'Welcome!';
+var _moarwick$elm_webpack_starter$Components_Home$tile = function (_p0) {
+	var _p1 = _p0;
+	var _p2 = _p1.url;
+	return A2(
+		_elm_lang$html$Html$div,
+		{
+			ctor: '::',
+			_0: _elm_lang$html$Html_Attributes$class('wrapper pure-u-1 pure-u-lg-1-2 pure-u-xl-1-4'),
+			_1: {ctor: '[]'}
+		},
+		{
+			ctor: '::',
+			_0: A2(
+				_elm_lang$html$Html$a,
+				{
+					ctor: '::',
+					_0: _elm_lang$html$Html_Attributes$href(_p2),
+					_1: {
+						ctor: '::',
+						_0: _moarwick$elm_webpack_starter$Routing$onLinkClick(
+							_moarwick$elm_webpack_starter$Msgs$ChangeLocation(_p2)),
+						_1: {ctor: '[]'}
+					}
+				},
+				{
+					ctor: '::',
+					_0: A2(
+						_elm_lang$html$Html$img,
+						{
+							ctor: '::',
+							_0: _elm_lang$html$Html_Attributes$src(_p1.imgSrc),
+							_1: {ctor: '[]'}
+						},
+						{ctor: '[]'}),
+					_1: {
+						ctor: '::',
+						_0: A2(
+							_elm_lang$html$Html$div,
+							{
+								ctor: '::',
+								_0: _elm_lang$html$Html_Attributes$class('textContent'),
+								_1: {ctor: '[]'}
+							},
+							{
+								ctor: '::',
+								_0: A2(
+									_elm_lang$html$Html$div,
+									{ctor: '[]'},
+									{
+										ctor: '::',
+										_0: A2(
+											_elm_lang$html$Html$h2,
+											{ctor: '[]'},
+											{
+												ctor: '::',
+												_0: _elm_lang$html$Html$text(_p1.title),
+												_1: {ctor: '[]'}
+											}),
+										_1: {
+											ctor: '::',
+											_0: A2(
+												_elm_lang$html$Html$p,
+												{ctor: '[]'},
+												{
+													ctor: '::',
+													_0: _elm_lang$html$Html$text(_p1.desc),
+													_1: {ctor: '[]'}
+												}),
+											_1: {ctor: '[]'}
+										}
+									}),
+								_1: {ctor: '[]'}
+							}),
+						_1: {ctor: '[]'}
+					}
+				}),
+			_1: {ctor: '[]'}
+		});
+};
+var _moarwick$elm_webpack_starter$Components_Home$cases = A2(
+	_elm_lang$html$Html$div,
+	{
+		ctor: '::',
+		_0: _elm_lang$html$Html_Attributes$class('cases'),
+		_1: {ctor: '[]'}
+	},
+	{
+		ctor: '::',
+		_0: A2(
+			_elm_lang$html$Html$h1,
+			{ctor: '[]'},
+			{
+				ctor: '::',
+				_0: _elm_lang$html$Html$text('My Work'),
+				_1: {ctor: '[]'}
+			}),
+		_1: {
+			ctor: '::',
+			_0: A2(
+				_elm_lang$html$Html$div,
+				{
+					ctor: '::',
+					_0: _elm_lang$html$Html_Attributes$class('pure-g'),
+					_1: {ctor: '[]'}
+				},
+				{
+					ctor: '::',
+					_0: _moarwick$elm_webpack_starter$Components_Home$tile(_moarwick$elm_webpack_starter$TileData$ammaData),
+					_1: {
+						ctor: '::',
+						_0: _moarwick$elm_webpack_starter$Components_Home$tile(_moarwick$elm_webpack_starter$TileData$instashopData),
+						_1: {
+							ctor: '::',
+							_0: _moarwick$elm_webpack_starter$Components_Home$tile(_moarwick$elm_webpack_starter$TileData$dignityMealsData),
+							_1: {
+								ctor: '::',
+								_0: _moarwick$elm_webpack_starter$Components_Home$tile(_moarwick$elm_webpack_starter$TileData$weddingData),
+								_1: {ctor: '[]'}
+							}
+						}
+					}
+				}),
+			_1: {ctor: '[]'}
+		}
+	});
+var _moarwick$elm_webpack_starter$Components_Home$intro = function (size) {
+	return A2(
+		_elm_lang$html$Html$div,
+		{
+			ctor: '::',
+			_0: _elm_lang$html$Html_Attributes$class(
+				A2(_elm_lang$core$Basics_ops['++'], 'intro ', size)),
+			_1: {ctor: '[]'}
+		},
+		{
+			ctor: '::',
+			_0: A2(
+				_elm_lang$html$Html$h1,
+				{ctor: '[]'},
+				{
+					ctor: '::',
+					_0: _elm_lang$html$Html$text(_moarwick$elm_webpack_starter$Components_Home$welcomeText),
+					_1: {ctor: '[]'}
+				}),
+			_1: {
+				ctor: '::',
+				_0: A2(
+					_elm_lang$html$Html$p,
+					{ctor: '[]'},
+					{
+						ctor: '::',
+						_0: _elm_lang$html$Html$text(_moarwick$elm_webpack_starter$Components_Home$introText),
+						_1: {ctor: '[]'}
+					}),
+				_1: {ctor: '[]'}
+			}
+		});
+};
+var _moarwick$elm_webpack_starter$Components_Home$cover = A2(
+	_elm_lang$html$Html$div,
+	{
+		ctor: '::',
+		_0: _elm_lang$html$Html_Attributes$class('cover'),
+		_1: {ctor: '[]'}
+	},
+	{
+		ctor: '::',
+		_0: _moarwick$elm_webpack_starter$Components_Home$intro('large'),
+		_1: {ctor: '[]'}
+	});
+var _moarwick$elm_webpack_starter$Components_Home$home = A2(
+	_elm_lang$html$Html$div,
+	{
+		ctor: '::',
+		_0: _elm_lang$html$Html_Attributes$class('home'),
+		_1: {ctor: '[]'}
+	},
+	{
+		ctor: '::',
+		_0: _moarwick$elm_webpack_starter$Components_Home$cover,
+		_1: {
+			ctor: '::',
+			_0: _moarwick$elm_webpack_starter$Components_Home$intro('small'),
+			_1: {
+				ctor: '::',
+				_0: _moarwick$elm_webpack_starter$Components_Home$cases,
+				_1: {ctor: '[]'}
+			}
+		}
+	});

@@ -1,0 +1,123 @@
+var _moarwick$elm_webpack_starter$Components_Portfolio_WeddingWebsite$portfolioItem = {
+	ctor: '::',
+	_0: A2(
+		_elm_lang$html$Html$h1,
+		{
+			ctor: '::',
+			_0: _elm_lang$html$Html_Attributes$class('hwed'),
+			_1: {ctor: '[]'}
+		},
+		{
+			ctor: '::',
+			_0: _elm_lang$html$Html$text('Wedding Website'),
+			_1: {ctor: '[]'}
+		}),
+	_1: {
+		ctor: '::',
+		_0: A2(
+			_elm_lang$html$Html$a,
+			{
+				ctor: '::',
+				_0: _elm_lang$html$Html_Attributes$target('_blank'),
+				_1: {
+					ctor: '::',
+					_0: _elm_lang$html$Html_Attributes$class('wedlink'),
+					_1: {
+						ctor: '::',
+						_0: _elm_lang$html$Html_Attributes$href('http://www.mikatja.fi'),
+						_1: {ctor: '[]'}
+					}
+				}
+			},
+			{
+				ctor: '::',
+				_0: _elm_lang$html$Html$text('www.mikatja.fi'),
+				_1: {ctor: '[]'}
+			}),
+		_1: {
+			ctor: '::',
+			_0: A2(
+				_elm_lang$html$Html$img,
+				{
+					ctor: '::',
+					_0: _elm_lang$html$Html_Attributes$class('portfolio-cover'),
+					_1: {
+						ctor: '::',
+						_0: _elm_lang$html$Html_Attributes$src(
+							A2(_elm_lang$core$Basics_ops['++'], _moarwick$elm_webpack_starter$Config$imgPath, 'wedding-cover.jpg')),
+						_1: {ctor: '[]'}
+					}
+				},
+				{ctor: '[]'}),
+			_1: {
+				ctor: '::',
+				_0: A2(_moarwick$elm_webpack_starter$Components_Portfolio_Intro$introText, 'Project:', 'Creating responsive website for our wedding'),
+				_1: {
+					ctor: '::',
+					_0: A2(_moarwick$elm_webpack_starter$Components_Portfolio_Intro$introText, 'Goal:', 'To give information about the wedding for the guests and also a place for registration'),
+					_1: {
+						ctor: '::',
+						_0: A2(_moarwick$elm_webpack_starter$Components_Portfolio_Intro$introText, 'My role:', 'Visual Design and Front-end development'),
+						_1: {
+							ctor: '::',
+							_0: A2(
+								_elm_lang$html$Html$h2,
+								{ctor: '[]'},
+								{
+									ctor: '::',
+									_0: _elm_lang$html$Html$text('Summary'),
+									_1: {ctor: '[]'}
+								}),
+							_1: {
+								ctor: '::',
+								_0: A2(
+									_elm_lang$html$Html$p,
+									{ctor: '[]'},
+									{
+										ctor: '::',
+										_0: _elm_lang$html$Html$text('This project begun at the end of my first graphic design course, where I learned the principles of web design. I wanted to create responsive website for our wedding and was also encouraged to develop them myself (with the help of my future husband).'),
+										_1: {ctor: '[]'}
+									}),
+								_1: {
+									ctor: '::',
+									_0: A2(
+										_elm_lang$html$Html$p,
+										{ctor: '[]'},
+										{
+											ctor: '::',
+											_0: _elm_lang$html$Html$text('The goal was to create beautiful, intuitive and responsive website that would be a delight to use. I browsed through different wedding websites and emulated the best features of the sites. I wanted to use long-form scrollable site with sticky menu to create effortless navigation of the site.'),
+											_1: {ctor: '[]'}
+										}),
+									_1: {
+										ctor: '::',
+										_0: A2(
+											_elm_lang$html$Html$p,
+											{ctor: '[]'},
+											{
+												ctor: '::',
+												_0: _elm_lang$html$Html$text('I started to design the site already on my Graphic Design 101 course starting from wireframes and style tiles. I created multiple iterations of the site before I landed on this one, so this was a process.'),
+												_1: {ctor: '[]'}
+											}),
+										_1: {
+											ctor: '::',
+											_0: A2(
+												_elm_lang$html$Html$p,
+												{ctor: '[]'},
+												{
+													ctor: '::',
+													_0: _elm_lang$html$Html$text('I was thrown to the deep end of the pool filled with ice-water and learned to swim. I learnt HTML/CSS and JavaScript on codeacademy.com and used my skills from there, and the help of my developer fiancé to create the website. I learnt to use Git and Heroku during this project.'),
+													_1: {ctor: '[]'}
+												}),
+											_1: {ctor: '[]'}
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+};
+var _moarwick$elm_webpack_starter$Components_Portfolio_WeddingWebsite$weddingWebsite = A3(_moarwick$elm_webpack_starter$Components_Portfolio_Wrapper$wrapper, _elm_lang$core$Maybe$Nothing, _moarwick$elm_webpack_starter$Components_Portfolio_WeddingWebsite$portfolioItem, false);

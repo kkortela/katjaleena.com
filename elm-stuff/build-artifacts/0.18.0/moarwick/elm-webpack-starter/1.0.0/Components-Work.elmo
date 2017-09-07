@@ -1,0 +1,139 @@
+var _moarwick$elm_webpack_starter$Components_Work$tiles = {
+	ctor: '::',
+	_0: _moarwick$elm_webpack_starter$TileData$ammaData,
+	_1: {
+		ctor: '::',
+		_0: _moarwick$elm_webpack_starter$TileData$instashopData,
+		_1: {
+			ctor: '::',
+			_0: _moarwick$elm_webpack_starter$TileData$dignityMealsData,
+			_1: {
+				ctor: '::',
+				_0: _moarwick$elm_webpack_starter$TileData$weddingData,
+				_1: {ctor: '[]'}
+			}
+		}
+	}
+};
+var _moarwick$elm_webpack_starter$Components_Work$tile = F2(
+	function (i, _p0) {
+		var _p1 = _p0;
+		var isWide = _elm_lang$core$Native_Utils.eq(i, 0) || _elm_lang$core$Native_Utils.eq(i, 3);
+		var pureClasses = isWide ? 'pure-u-lg-13-24 pure-u-xl-3-5' : 'pure-u-lg-11-24 pure-u-xl-2-5';
+		var classes = A2(
+			_elm_lang$core$Basics_ops['++'],
+			'wrapper pure-u-1 case-',
+			A2(
+				_elm_lang$core$Basics_ops['++'],
+				_elm_lang$core$Basics$toString(i),
+				A2(_elm_lang$core$Basics_ops['++'], ' ', pureClasses)));
+		var bgColor = isWide ? 'lightBg' : 'darkBg';
+		return A2(
+			_elm_lang$html$Html$div,
+			{
+				ctor: '::',
+				_0: _elm_lang$html$Html_Attributes$class(classes),
+				_1: {ctor: '[]'}
+			},
+			{
+				ctor: '::',
+				_0: A2(
+					_elm_lang$html$Html$a,
+					{
+						ctor: '::',
+						_0: _elm_lang$html$Html_Attributes$href(_p1.url),
+						_1: {
+							ctor: '::',
+							_0: _elm_lang$html$Html_Attributes$class(bgColor),
+							_1: {ctor: '[]'}
+						}
+					},
+					{
+						ctor: '::',
+						_0: A2(
+							_elm_lang$html$Html$img,
+							{
+								ctor: '::',
+								_0: _elm_lang$html$Html_Attributes$src(_p1.imgSrc),
+								_1: {ctor: '[]'}
+							},
+							{ctor: '[]'}),
+						_1: {
+							ctor: '::',
+							_0: A2(
+								_elm_lang$html$Html$div,
+								{
+									ctor: '::',
+									_0: _elm_lang$html$Html_Attributes$class('textContent'),
+									_1: {ctor: '[]'}
+								},
+								{
+									ctor: '::',
+									_0: A2(
+										_elm_lang$html$Html$h2,
+										{ctor: '[]'},
+										{
+											ctor: '::',
+											_0: _elm_lang$html$Html$text(_p1.title),
+											_1: {ctor: '[]'}
+										}),
+									_1: {
+										ctor: '::',
+										_0: A2(
+											_elm_lang$html$Html$p,
+											{ctor: '[]'},
+											{
+												ctor: '::',
+												_0: _elm_lang$html$Html$text(_p1.desc),
+												_1: {ctor: '[]'}
+											}),
+										_1: {ctor: '[]'}
+									}
+								}),
+							_1: {ctor: '[]'}
+						}
+					}),
+				_1: {ctor: '[]'}
+			});
+	});
+var _moarwick$elm_webpack_starter$Components_Work$work = A2(
+	_elm_lang$html$Html$div,
+	{
+		ctor: '::',
+		_0: _elm_lang$html$Html_Attributes$class('work'),
+		_1: {ctor: '[]'}
+	},
+	{
+		ctor: '::',
+		_0: A2(
+			_elm_lang$html$Html$h1,
+			{ctor: '[]'},
+			{
+				ctor: '::',
+				_0: _elm_lang$html$Html$text('My Work'),
+				_1: {ctor: '[]'}
+			}),
+		_1: {
+			ctor: '::',
+			_0: A2(
+				_elm_lang$html$Html$p,
+				{ctor: '[]'},
+				{
+					ctor: '::',
+					_0: _elm_lang$html$Html$text('Here’s some of my latest work'),
+					_1: {ctor: '[]'}
+				}),
+			_1: {
+				ctor: '::',
+				_0: A2(
+					_elm_lang$html$Html$div,
+					{
+						ctor: '::',
+						_0: _elm_lang$html$Html_Attributes$class('pure-g'),
+						_1: {ctor: '[]'}
+					},
+					A2(_elm_lang$core$List$indexedMap, _moarwick$elm_webpack_starter$Components_Work$tile, _moarwick$elm_webpack_starter$Components_Work$tiles)),
+				_1: {ctor: '[]'}
+			}
+		}
+	});
