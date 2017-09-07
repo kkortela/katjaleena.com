@@ -1,6 +1,0 @@
-var _moarwick$elm_webpack_starter$Msgs$OnLocationChange = function (a) {
-	return {ctor: 'OnLocationChange', _0: a};
-};
-var _moarwick$elm_webpack_starter$Msgs$ChangeLocation = function (a) {
-	return {ctor: 'ChangeLocation', _0: a};
-};
