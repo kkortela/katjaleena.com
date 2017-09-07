@@ -6,7 +6,8 @@
   "scripts": {
     "start": "webpack-dev-server --hot --inline",
     "build": "rimraf dist && webpack && mv dist/*.otf dist/static/css/",
-    "reinstall": "npm i rimraf && rimraf node_modules && npm uninstall -g elm && npm i -g elm && npm i && elm package install"
+    "reinstall": "npm i rimraf && rimraf node_modules && npm uninstall -g elm && npm i -g elm && npm i && elm package install",
+    "postinstall": "npm run build"
   },
   "devDependencies": {
     "autoprefixer": "7.1.4",
