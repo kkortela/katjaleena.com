@@ -1,0 +1,79 @@
+var _moarwick$elm_webpack_starter$Routing$onLinkClick = function (message) {
+	var options = {stopPropagation: false, preventDefault: true};
+	return A3(
+		_elm_lang$html$Html_Events$onWithOptions,
+		'click',
+		options,
+		_elm_lang$core$Json_Decode$succeed(message));
+};
+var _moarwick$elm_webpack_starter$Routing$weddingPath = '/wedding-website';
+var _moarwick$elm_webpack_starter$Routing$dignityMealsPath = '/dignity-meals';
+var _moarwick$elm_webpack_starter$Routing$instashopPath = '/instashop';
+var _moarwick$elm_webpack_starter$Routing$ammaPath = '/amma';
+var _moarwick$elm_webpack_starter$Routing$aboutPath = '/about';
+var _moarwick$elm_webpack_starter$Routing$workPath = '/work';
+var _moarwick$elm_webpack_starter$Routing$homePath = '/';
+var _moarwick$elm_webpack_starter$Routing$NotFoundRoute = {ctor: 'NotFoundRoute'};
+var _moarwick$elm_webpack_starter$Routing$WeddingWebsiteRoute = {ctor: 'WeddingWebsiteRoute'};
+var _moarwick$elm_webpack_starter$Routing$DignityMealsRoute = {ctor: 'DignityMealsRoute'};
+var _moarwick$elm_webpack_starter$Routing$InstashopRoute = {ctor: 'InstashopRoute'};
+var _moarwick$elm_webpack_starter$Routing$AmmaRoute = {ctor: 'AmmaRoute'};
+var _moarwick$elm_webpack_starter$Routing$AboutRoute = {ctor: 'AboutRoute'};
+var _moarwick$elm_webpack_starter$Routing$WorkRoute = {ctor: 'WorkRoute'};
+var _moarwick$elm_webpack_starter$Routing$HomeRoute = {ctor: 'HomeRoute'};
+var _moarwick$elm_webpack_starter$Routing$matchers = _evancz$url_parser$UrlParser$oneOf(
+	{
+		ctor: '::',
+		_0: A2(_evancz$url_parser$UrlParser$map, _moarwick$elm_webpack_starter$Routing$HomeRoute, _evancz$url_parser$UrlParser$top),
+		_1: {
+			ctor: '::',
+			_0: A2(
+				_evancz$url_parser$UrlParser$map,
+				_moarwick$elm_webpack_starter$Routing$WorkRoute,
+				_evancz$url_parser$UrlParser$s('work')),
+			_1: {
+				ctor: '::',
+				_0: A2(
+					_evancz$url_parser$UrlParser$map,
+					_moarwick$elm_webpack_starter$Routing$AboutRoute,
+					_evancz$url_parser$UrlParser$s('about')),
+				_1: {
+					ctor: '::',
+					_0: A2(
+						_evancz$url_parser$UrlParser$map,
+						_moarwick$elm_webpack_starter$Routing$AmmaRoute,
+						_evancz$url_parser$UrlParser$s('amma')),
+					_1: {
+						ctor: '::',
+						_0: A2(
+							_evancz$url_parser$UrlParser$map,
+							_moarwick$elm_webpack_starter$Routing$InstashopRoute,
+							_evancz$url_parser$UrlParser$s('instashop')),
+						_1: {
+							ctor: '::',
+							_0: A2(
+								_evancz$url_parser$UrlParser$map,
+								_moarwick$elm_webpack_starter$Routing$DignityMealsRoute,
+								_evancz$url_parser$UrlParser$s('dignity-meals')),
+							_1: {
+								ctor: '::',
+								_0: A2(
+									_evancz$url_parser$UrlParser$map,
+									_moarwick$elm_webpack_starter$Routing$WeddingWebsiteRoute,
+									_evancz$url_parser$UrlParser$s('wedding-website')),
+								_1: {ctor: '[]'}
+							}
+						}
+					}
+				}
+			}
+		}
+	});
+var _moarwick$elm_webpack_starter$Routing$parseLocation = function (location) {
+	var _p0 = A2(_evancz$url_parser$UrlParser$parsePath, _moarwick$elm_webpack_starter$Routing$matchers, location);
+	if (_p0.ctor === 'Just') {
+		return _p0._0;
+	} else {
+		return _moarwick$elm_webpack_starter$Routing$NotFoundRoute;
+	}
+};

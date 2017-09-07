@@ -1,0 +1,6 @@
+var _moarwick$elm_webpack_starter$Models$model = function (route) {
+	return {route: route};
+};
+var _moarwick$elm_webpack_starter$Models$Model = function (a) {
+	return {route: a};
+};

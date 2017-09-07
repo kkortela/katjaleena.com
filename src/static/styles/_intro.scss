@@ -1,0 +1,48 @@
+.intro {
+    margin: 180px 0 0 70px;
+    color: white;
+    text-align: center;
+    padding: 0 5%;
+    width: 520px;
+    float: left;
+
+    h1 {
+        font-weight: 300;
+        font-size: 42px;
+        margin: 0;
+    }
+
+    p {
+        font-size: 30px;
+        margin: 0;
+        font-weight: 300;
+    }
+
+    @media screen and (max-width: 1024px) {
+        &.large {
+            display: none;
+        }    
+        &.small {
+            display: block;
+            color: #0B3F3C;
+            float: none;
+            margin: 50px auto;
+        }
+    }
+    @media screen and (min-width: 1025px) {
+        &.small {
+            display: none;
+        }    
+    }
+    @media screen and (max-width: 570px) {
+        &.small {
+            width: 287px;
+        }
+
+        &.small p {
+            font-size: 20px;
+        }
+    }
+}
+
+
