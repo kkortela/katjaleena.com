@@ -2,11 +2,12 @@
     margin: 20px 10% 10px 10%;
     height: 100%;
     overflow:hidden;
+    position: absolute;
 
     .logo {
         float:left;
         cursor: pointer;
-        width: 153px;
+        width: 160px;
     }
 
     .logo img {
@@ -30,20 +31,20 @@
     }
 
     .link {
-        color: #0B3F3C;
-        font-size: 16px;
-        font-weight: 500;
+        color: white;
+        font-size: 20px;
+        font-weight: 400;
         display: inline-block;
         text-decoration: none;
     }
 
     .link:visited {
-        color: #0B3F3C;
-        text-decoration: none;
+        color: white;
+        text-decoration: underline;
     }
 
     .link:hover {
-        color: #5CA59B;
+        color: grey;
     }
 
     @media screen and (max-width: 455px) {
