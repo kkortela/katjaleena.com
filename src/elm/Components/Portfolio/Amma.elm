@@ -20,9 +20,9 @@ portfolioItem =
         [ text "Amma" ]
     , img [ class "portfolio-cover", src (imgPath ++ "amma-cover.jpg") ]
         []
-    , introText "Project:" "Asthma Management and Monitoring App"
-    , introText "Target user:" "Adult asthmatics, who want to track their asthma"
-    , introText "Goal:" "To help the asthmatics to understand the relation of the triggers and symptoms and to manage their asthma by creating action plans"
+    , introText "What?" "Asthma Management and Monitoring App"
+    , introText "For whom?" "Adult asthmatics, who want to track their asthma"
+    , introText "Why?" "To help the asthmatics to understand the relation of the triggers and symptoms and to manage their asthma by creating action plans"
     , introText "My Role:" "UX and Visual Designer"
     , div [ class "processmain" ]
         [ processSteps "research-icon" "Research" [ "UX Strategy Blueprint", "Personas", "Feature Matrix", "User Flows" ]
