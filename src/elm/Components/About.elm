@@ -22,7 +22,6 @@ aboutImg : Html Msg
 aboutImg =
     div [ class "imgWrapper" ]
         [ img [ src "static/img/aboutme.jpg" ] []
-        , p [ class "caption" ] [ text "This is me, writing to You" ]
         ]
 
 
